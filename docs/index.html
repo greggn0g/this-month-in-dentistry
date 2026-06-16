@@ -20,6 +20,8 @@
     </div>
   </div>
 
+  <div class="stats-strip" id="stats-strip"></div>
+
   <div class="body-grid">
     <aside class="sidebar">
       <div class="sidebar-header" id="sidebar-count">Loading…</div>
@@ -139,6 +141,27 @@ function renderDetail() {
   `;
 }
 
+function renderStats(data) {
+  const strip = document.getElementById('stats-strip');
+  const stats = [
+    data.journals_scanned != null ? { label: 'Journals scanned', value: data.journals_scanned } : null,
+    data.articles_scanned != null ? { label: 'Articles screened', value: data.articles_scanned } : null,
+    { label: 'Top picks selected', value: allArticles.length },
+  ].filter(Boolean);
+
+  if (!stats.length) {
+    strip.innerHTML = '';
+    return;
+  }
+
+  strip.innerHTML = stats.map(s => `
+    <div class="stat-pill">
+      <span class="stat-value">${s.value.toLocaleString()}</span>
+      <span class="stat-label">${escapeHtml(s.label)}</span>
+    </div>
+  `).join('');
+}
+
 function formatUpdatedLabel(iso) {
   if (!iso) return '';
   const d = new Date(iso);
@@ -157,6 +180,7 @@ async function init() {
 
   document.getElementById('updated-label').textContent = formatUpdatedLabel(data.generated_at);
 
+  renderStats(data);
   renderSidebar();
   renderDetail();
 }

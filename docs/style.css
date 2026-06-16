@@ -91,6 +91,36 @@ body {
   outline-offset: 2px;
 }
 
+/* ── Stats strip ── */
+.stats-strip {
+  display: flex;
+  gap: .75rem;
+  flex-wrap: wrap;
+}
+
+.stat-pill {
+  display: flex;
+  align-items: baseline;
+  gap: .4rem;
+  background: var(--panel-bg);
+  border-radius: var(--radius-pill);
+  padding: .55rem 1.1rem;
+}
+
+.stat-value {
+  font-family: 'Fraunces', serif;
+  font-size: 1.05rem;
+  color: var(--accent);
+}
+
+.stat-label {
+  font-size: .72rem;
+  font-weight: 500;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
 /* ── Body grid ── */
 .body-grid {
   display: grid;

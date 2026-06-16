@@ -294,7 +294,7 @@ def journal_homepage(journal_name: str, metrics: dict) -> str:
     return entry.get("homepage_url", "") or ""
 
 
-def build_output(scored: list[dict]) -> dict:
+def build_output(scored: list[dict], articles_scanned: int | None = None) -> dict:
     from datetime import datetime, timezone
 
     metrics = load_journal_metrics()
@@ -341,6 +341,8 @@ def build_output(scored: list[dict]) -> dict:
 
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
+        "journals_scanned": len(NLM_DENTAL_JOURNALS),
+        "articles_scanned": articles_scanned if articles_scanned is not None else len(scored),
         "articles": articles_out,
     }
 
@@ -360,7 +362,8 @@ def main():
             print("No scored cache found. Run --score-only first.")
             sys.exit(1)
         scored = json.loads(scored_cache.read_text())
-        output = build_output(scored)
+        fetched_articles = json.loads(CACHE_FILE.read_text()) if CACHE_FILE.exists() else scored
+        output = build_output(scored, articles_scanned=len(fetched_articles))
         OUTPUT_FILE.write_text(json.dumps(output, indent=2))
         print(f"Wrote {len(output['articles'])} articles to {OUTPUT_FILE}")
         return
@@ -403,7 +406,7 @@ def main():
     scored = score_articles(articles)
 
     # Output phase
-    output = build_output(scored)
+    output = build_output(scored, articles_scanned=len(articles))
     OUTPUT_FILE.write_text(json.dumps(output, indent=2))
     print(f"\nWrote {len(output['articles'])} articles to {OUTPUT_FILE}")
 
