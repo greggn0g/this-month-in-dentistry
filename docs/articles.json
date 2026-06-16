@@ -1,1 +1,229 @@
-{"generated_at": null, "articles": []}
+{
+  "generated_at": "2026-06-16T04:47:00.790490+00:00",
+  "articles": [
+    {
+      "pmid": "42253157",
+      "title": "Peri-implantitis-Is it mainly a clinician-initiated complication of implant therapy?",
+      "journal": "Periodontology 2000",
+      "journal_url": "https://onlinelibrary.wiley.com/journal/16000757",
+      "pub_date": "Jun 2026",
+      "authors": [
+        "Chen",
+        "Monje",
+        "Strauss"
+      ],
+      "doi": "10.1111/prd.70051",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42253157/",
+      "summary": "This review argues that most peri-implantitis cases result from clinician errors\u2014particularly surgical malposition and prosthetic factors that expose micro-rough implant surfaces\u2014rather than patient pathology alone. Evidence-based surgical and prosthetic protocols to prevent micro-rough surface exposure could substantially reduce peri-implantitis incidence.",
+      "specialty": "Implants",
+      "clinical_score": 7,
+      "novelty_score": 6,
+      "journal_score": 5.0,
+      "badges": [
+        "Clinical"
+      ]
+    },
+    {
+      "pmid": "42208797",
+      "title": "Long-term outcomes of ceramic crowns in adolescents and young adults with amelogenesis imperfecta: final follow-up of a randomized split-mouth controlled clinical trial.",
+      "journal": "Journal of dentistry",
+      "journal_url": "https://www.sciencedirect.com/journal/journal-of-dentistry",
+      "pub_date": "May 2026",
+      "authors": [
+        "Pousette Lundgren",
+        "Vestlund",
+        "Dahll\u00f6f"
+      ],
+      "doi": "10.1016/j.jdent.2026.106794",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42208797/",
+      "summary": "This long-term follow-up (mean 13.4 years) of a randomized controlled trial in adolescents and young adults with amelogenesis imperfecta shows durable performance of both Procera zirconia and IPS e.max Press crowns, providing strong evidence for early prosthetic intervention in this population. The study directly informs treatment planning and material selection for a specific but meaningful patient group.",
+      "specialty": "Restorative",
+      "clinical_score": 8,
+      "novelty_score": 7,
+      "journal_score": 2.27,
+      "badges": [
+        "Clinical",
+        "Novel"
+      ]
+    },
+    {
+      "pmid": "42188992",
+      "title": "Clinical Evaluation of Three Direct Pulp Capping Materials in Caries-Induced Pulpitis of Mature Permanent Teeth: A Randomized Controlled Trial.",
+      "journal": "Clinical and experimental dental research",
+      "journal_url": "https://onlinelibrary.wiley.com/journal/20574347",
+      "pub_date": "Jun 2026",
+      "authors": [
+        "Li",
+        "Zeng",
+        "Chen"
+      ],
+      "doi": "10.1016/j.actbio.2014.08.014",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42188992/",
+      "summary": "This randomized controlled trial directly compared direct pulp capping success rates (at 12 months) using three materials\u2014calcium hydroxide, MTA, and iRoot BP Plus\u2014in caries-exposed permanent teeth with reversible pulpitis, identifying which material performs best and which clinical factors predict success. The prospective, controlled design and clinical relevance make this highly actionable for general dentists and endodontists managing vital pulp therapy.",
+      "specialty": "Endo",
+      "clinical_score": 9,
+      "novelty_score": 7,
+      "journal_score": 1.24,
+      "badges": [
+        "Clinical",
+        "Novel"
+      ]
+    },
+    {
+      "pmid": "42244335",
+      "title": "Periodontitis, Edentulism, and Risk of Metabolic Syndrome, Obesity, and Dyslipidemia: A Systematic Review With Meta-Analyses.",
+      "journal": "Journal of periodontal research",
+      "journal_url": "https://onlinelibrary.wiley.com/journal/16000765",
+      "pub_date": "Jun 2026",
+      "authors": [
+        "Barbato",
+        "di Martino",
+        "Castelluzzo"
+      ],
+      "doi": "10.1111/jre.70130",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42244335/",
+      "summary": "A meta-analysis of 10 longitudinal studies confirms that periodontitis and edentulism are associated with increased risk of metabolic syndrome, obesity, and dyslipidemia, strengthening the evidence that periodontal health impacts systemic metabolic health. This finding supports broader patient counseling about the systemic importance of periodontal disease management.",
+      "specialty": "Perio",
+      "clinical_score": 8,
+      "novelty_score": 6,
+      "journal_score": 2.95,
+      "badges": [
+        "Clinical"
+      ]
+    },
+    {
+      "pmid": "42234020",
+      "title": "Comparative efficacy of electric toothbrush technologies in plaque and gingivitis reduction: a network meta-analysis.",
+      "journal": "Clinical oral investigations",
+      "journal_url": "https://link.springer.com/journal/784",
+      "pub_date": "Jun 2026",
+      "authors": [
+        "Luo",
+        "Chen",
+        "Jing"
+      ],
+      "doi": "10.1111/idh.12463",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42234020/",
+      "summary": "A network meta-analysis ranked electric toothbrush technologies by their plaque and gingivitis reduction efficacy, finding oscillating-rotating and sonic designs most effective. This comprehensive comparison provides practitioners and patients with evidence-based guidance on toothbrush selection for improved oral hygiene outcomes.",
+      "specialty": "Public Health",
+      "clinical_score": 8,
+      "novelty_score": 7,
+      "journal_score": 1.78,
+      "badges": [
+        "Clinical",
+        "Novel"
+      ]
+    },
+    {
+      "pmid": "42185891",
+      "title": "Immediate implant placement in Type II socket using vestibular socket therapy with pericardial membrane versus simultaneous guided bone regeneration (randomized controlled clinical trial).",
+      "journal": "BMC oral health",
+      "journal_url": "https://bmcoralhealth.biomedcentral.com/",
+      "pub_date": "May 2026",
+      "authors": [
+        "Ebrahim",
+        "Shabaan",
+        "Gaweesh"
+      ],
+      "doi": "10.1016/j.jcm.2016.02.012",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42185891/",
+      "summary": "This randomized controlled trial demonstrates that vestibular socket therapy with pericardial membrane reduces midfacial gingival recession compared to conventional flap and guided bone regeneration for immediate implant placement in Type II sockets. Implant clinicians can now adopt this technique to improve esthetic outcomes in anterior immediate implant cases.",
+      "specialty": "Implants",
+      "clinical_score": 8,
+      "novelty_score": 7,
+      "journal_score": 1.71,
+      "badges": [
+        "Clinical",
+        "Novel"
+      ]
+    },
+    {
+      "pmid": "41942069",
+      "title": "Residual Pockets as an Endpoint on Periodontal Disease Progression in Supportive Periodontal Care.",
+      "journal": "Journal of clinical periodontology",
+      "journal_url": "https://onlinelibrary.wiley.com/journal/1600051X",
+      "pub_date": "Jun 2026",
+      "authors": [
+        "Tay",
+        "Ng",
+        "Siow"
+      ],
+      "doi": "10.1111/j.1600-051X.2005.00822.x",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41942069/",
+      "summary": "This retrospective study of 121 patients found that the number of residual probing pockets \u22655 mm after active therapy is a significant predictor of periodontitis progression during supportive care, with an identifiable threshold for risk stratification. Periodontists can use residual pocket count as a practical clinical marker to intensify monitoring and treatment for high-risk patients in maintenance.",
+      "specialty": "Perio",
+      "clinical_score": 8,
+      "novelty_score": 6,
+      "journal_score": 2.34,
+      "badges": [
+        "Clinical"
+      ]
+    },
+    {
+      "pmid": "41871798",
+      "title": "Effectiveness of silver diamine fluoride and fluoride varnish in arresting caries lesions in permanent molars: A randomized controlled trial.",
+      "journal": "Journal of dentistry",
+      "journal_url": "https://www.sciencedirect.com/journal/journal-of-dentistry",
+      "pub_date": "Jun 2026",
+      "authors": [
+        "Sabino E Andrade",
+        "Piovesan",
+        "Queiroz"
+      ],
+      "doi": "10.1016/j.jdent.2026.106647",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41871798/",
+      "summary": "Silver diamine fluoride (38%) arrests early caries lesions (ICDAS 1\u20132) in first permanent molars more effectively than fluoride varnish (88% vs. 66% success at six months), particularly in newly erupted teeth. This RCT supports SDF as a more effective topical agent for caries arrest in children and provides actionable guidance for general dentists managing early interproximal or smooth-surface lesions.",
+      "specialty": "Pediatric",
+      "clinical_score": 8,
+      "novelty_score": 6,
+      "journal_score": 2.27,
+      "badges": [
+        "Clinical"
+      ]
+    },
+    {
+      "pmid": "41856391",
+      "title": "Single-visit versus multiple-visit root canal therapy: Post-endodontic pain outcomes from an umbrella review.",
+      "journal": "Journal of dentistry",
+      "journal_url": "https://www.sciencedirect.com/journal/journal-of-dentistry",
+      "pub_date": "Jun 2026",
+      "authors": [
+        "Gupta",
+        "Abraham",
+        "Ahmad"
+      ],
+      "doi": "10.1016/j.jdent.2026.106637",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41856391/",
+      "summary": "An umbrella review of 12 systematic reviews found no consistent clinically important difference in post-operative pain between single-visit and multiple-visit root canal treatment. This evidence synthesis supports treatment flexibility and clinician choice, though outcome definition variability across studies limits certainty.",
+      "specialty": "Endo",
+      "clinical_score": 8,
+      "novelty_score": 6,
+      "journal_score": 2.27,
+      "badges": [
+        "Clinical"
+      ]
+    },
+    {
+      "pmid": "42214655",
+      "title": "Long-term outcomes of regenerative periodontal therapy and orthodontic treatment: 20-year results from a prospective study.",
+      "journal": "Journal of dentistry",
+      "journal_url": "https://www.sciencedirect.com/journal/journal-of-dentistry",
+      "pub_date": "May 2026",
+      "authors": [
+        "Roccuzzo",
+        "Li",
+        "Salvi"
+      ],
+      "doi": "10.1016/j.jdent.2026.106799",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42214655/",
+      "summary": "This 20-year prospective study of 48 severely periodontally compromised teeth treated with regenerative periodontal therapy (EMD \u00b1 bone graft) and orthodontics demonstrates durable clinical attachment gain, reduced pocket depth, and high tooth retention, validating a multidisciplinary treatment strategy. The long follow-up and rigorous clinical endpoints make this a valuable guide for managing advanced periodontitis in general practice and specialist settings.",
+      "specialty": "Perio",
+      "clinical_score": 8,
+      "novelty_score": 6,
+      "journal_score": 2.27,
+      "badges": [
+        "Clinical"
+      ]
+    }
+  ]
+}

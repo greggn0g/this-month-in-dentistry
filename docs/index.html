@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>This Month in Dentistry</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="shell">
+
+  <div class="topbar">
+    <div class="masthead">This Month <em>in Dentistry</em></div>
+    <div class="topbar-right">
+      <span class="updated-label" id="updated-label"></span>
+    </div>
+  </div>
+
+  <div class="body-grid">
+    <aside class="sidebar">
+      <div class="sidebar-header" id="sidebar-count">Loading…</div>
+      <div class="sidebar-list" id="sidebar-list"></div>
+    </aside>
+
+    <main class="detail-pane" id="detail-pane">
+      <p class="empty">Loading articles…</p>
+    </main>
+  </div>
+
+</div>
+
+<script>
+let allArticles = [];
+let selectedIndex = 0;
+
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}
+
+function renderSidebar() {
+  const list = document.getElementById('sidebar-list');
+  const count = document.getElementById('sidebar-count');
+  count.textContent = `${allArticles.length} articles`;
+
+  if (allArticles.length === 0) {
+    list.innerHTML = '<p class="empty">No articles found.</p>';
+    return;
+  }
+
+  list.innerHTML = allArticles.map((a, i) => `
+    <button class="sidebar-row ${i === selectedIndex ? 'active' : ''}" data-index="${i}">
+      <span class="row-specialty">${escapeHtml(a.specialty)}</span>
+      <span class="row-title">${escapeHtml(a.title)}</span>
+      <span class="row-scores">
+        <span class="row-chip">CLIN <strong>${a.clinical_score}</strong></span>
+        <span class="row-chip">NOV <strong>${a.novelty_score}</strong></span>
+      </span>
+    </button>
+  `).join('');
+
+  list.querySelectorAll('.sidebar-row').forEach(btn => {
+    btn.addEventListener('click', () => {
+      selectedIndex = parseInt(btn.dataset.index, 10);
+      renderSidebar();
+      renderDetail();
+    });
+  });
+}
+
+function renderDetail() {
+  const pane = document.getElementById('detail-pane');
+  if (allArticles.length === 0) {
+    pane.innerHTML = '<p class="empty">No articles found.</p>';
+    return;
+  }
+
+  const a = allArticles[selectedIndex];
+  const badges = (a.badges || []).map(b => `<span class="tag tag-type">${escapeHtml(b)}</span>`).join('');
+  const authorStr = a.authors && a.authors.length
+    ? a.authors.slice(0, 3).join(', ') + (a.authors.length > 3 ? ' et al.' : '')
+    : '';
+
+  const clinPct = (a.clinical_score / 10 * 100).toFixed(0);
+  const novPct  = (a.novelty_score  / 10 * 100).toFixed(0);
+  const jourPct = (a.journal_score  / 5  * 100).toFixed(0);
+
+  pane.innerHTML = `
+    <div class="eyebrow-row">
+      <span class="tag tag-specialty">${escapeHtml(a.specialty)}</span>
+      ${badges}
+    </div>
+
+    <h1 class="detail-title"><a class="detail-title-link" href="${a.pubmed_url}" target="_blank" rel="noopener">${escapeHtml(a.title)}</a></h1>
+
+    <p class="detail-body">${a.summary}</p>
+
+    <div class="score-module">
+      <div class="score-col">
+        <span class="score-label">Clinical relevance</span>
+        <div class="score-track"><div class="score-fill clinical" style="width:${clinPct}%"></div></div>
+        <span class="score-value">${a.clinical_score}</span>
+      </div>
+      <div class="score-col">
+        <span class="score-label">Novelty</span>
+        <div class="score-track"><div class="score-fill novelty" style="width:${novPct}%"></div></div>
+        <span class="score-value">${a.novelty_score}</span>
+      </div>
+      <div class="score-col">
+        <span class="score-label">Journal quality</span>
+        <div class="score-track"><div class="score-fill journal" style="width:${jourPct}%"></div></div>
+        <span class="score-value">${a.journal_score}</span>
+      </div>
+    </div>
+
+    <div class="detail-footer">
+      <div class="footer-meta">
+        <a class="footer-journal" href="${a.journal_url || a.pubmed_url}" target="_blank" rel="noopener">${escapeHtml(a.journal)}</a>
+        <span class="footer-authors">${escapeHtml(authorStr)}${authorStr ? ' · ' : ''}${escapeHtml(a.pub_date || '')}</span>
+      </div>
+      <a class="cta-button" href="${a.pubmed_url}" target="_blank" rel="noopener">
+        View article
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+    <p class="credit-line">
+      Powered by <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">PubMed</a>
+      &amp; <a href="https://anthropic.com" target="_blank" rel="noopener">Claude</a>
+    </p>
+  `;
+}
+
+function formatUpdatedLabel(iso) {
+  if (!iso) return '';
+  const d = new Date(iso);
+  const formatted = d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+  return `Updated ${formatted} · Last 30 days`;
+}
+
+async function init() {
+  const resp = await fetch('articles.json');
+  const data = await resp.json();
+  allArticles = (data.articles || []).slice().sort((a, b) => {
+    const compositeA = a.clinical_score + a.novelty_score + a.journal_score;
+    const compositeB = b.clinical_score + b.novelty_score + b.journal_score;
+    return compositeB - compositeA;
+  });
+
+  document.getElementById('updated-label').textContent = formatUpdatedLabel(data.generated_at);
+
+  renderSidebar();
+  renderDetail();
+}
+
+init().catch(err => {
+  document.getElementById('detail-pane').innerHTML =
+    `<p class="empty">Failed to load articles: ${err.message}</p>`;
+});
+</script>
+</body>
+</html>
