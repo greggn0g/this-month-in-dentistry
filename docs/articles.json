@@ -1,5 +1,7 @@
 {
-  "generated_at": "2026-06-16T05:06:10.257604+00:00",
+  "generated_at": "2026-06-16T15:38:46.703268+00:00",
+  "journals_scanned": 133,
+  "articles_scanned": 2277,
   "articles": [
     {
       "pmid": "42253157",
@@ -14,36 +16,13 @@
       ],
       "doi": "10.1111/prd.70051",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42253157/",
-      "summary": "This review synthesizes evidence that many peri-implantitis cases result from clinician-controlled surgical and prosthetic errors\u2014particularly exposure of micro-rough implant surfaces\u2014rather than patient factors alone. The paper advocates specific evidence-based prevention protocols that implant practitioners can implement immediately to reduce this growing complication.",
+      "summary": "This review identifies surgical and prosthetic errors\u2014particularly micro-rough implant surface exposure\u2014as the primary cause of peri-implantitis rather than patient pathology, emphasizing prevention through proper surgical positioning and bone regeneration. Implant clinicians can immediately apply these principles to reduce peri-implantitis incidence by adhering to evidence-based surgical protocols.",
       "specialty": "Implants",
       "clinical_score": 7,
       "novelty_score": 6,
       "journal_score": 5.0,
       "badges": [
         "Clinical"
-      ]
-    },
-    {
-      "pmid": "42244335",
-      "title": "Periodontitis, Edentulism, and Risk of Metabolic Syndrome, Obesity, and Dyslipidemia: A Systematic Review With Meta-Analyses.",
-      "journal": "Journal of periodontal research",
-      "journal_url": "https://onlinelibrary.wiley.com/journal/16000765",
-      "pub_date": "Jun 2026",
-      "authors": [
-        "Barbato",
-        "di Martino",
-        "Castelluzzo"
-      ],
-      "doi": "10.1111/jre.70130",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42244335/",
-      "summary": "Meta-analysis of longitudinal studies confirms that periodontitis and edentulism are associated with increased risk of metabolic syndrome, obesity, and dyslipidemia, strengthening the evidence for oral-systemic health relationships. This finding supports counseling patients about periodontal disease as a modifiable risk factor for metabolic diseases and cardiovascular health.",
-      "specialty": "Perio",
-      "clinical_score": 8,
-      "novelty_score": 7,
-      "journal_score": 2.95,
-      "badges": [
-        "Clinical",
-        "Novel"
       ]
     },
     {
@@ -59,57 +38,11 @@
       ],
       "doi": "10.1016/j.jdent.2026.106799",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42214655/",
-      "summary": "A 20-year prospective study demonstrated that combining periodontal regenerative surgery (enamel matrix derivative with or without bone grafting) followed by orthodontic correction of malposition yields durable clinical attachment and bone-level improvements in severely compromised teeth. This evidence supports an integrated regenerative-orthodontic approach for Stage IV periodontitis patients seeking to save pathologically mobile teeth.",
+      "summary": "This 20-year prospective study demonstrates that combining periodontal regenerative surgery (enamel matrix derivative with or without bone graft) and orthodontic treatment can successfully save severely compromised periodontally diseased teeth with probing depths \u22657 mm. The long-term data supports this integrated multidisciplinary approach as a viable alternative to extraction for carefully selected Stage IV periodontitis patients.",
       "specialty": "Perio",
       "clinical_score": 8,
       "novelty_score": 7,
-      "journal_score": 2.27,
-      "badges": [
-        "Clinical",
-        "Novel"
-      ]
-    },
-    {
-      "pmid": "42248723",
-      "title": "Clinical evidence of bone apposition and potential osseointegration in additively manufactured subperiosteal implants: a report of three cases.",
-      "journal": "International journal of oral and maxillofacial surgery",
-      "journal_url": "https://www.sciencedirect.com/journal/international-journal-of-oral-and-maxillofacial-surgery",
-      "pub_date": "Jun 2026",
-      "authors": [
-        "Vaira",
-        "Biglio",
-        "Lechien"
-      ],
-      "doi": "10.1016/j.ijom.2026.05.026",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42248723/",
-      "summary": "This case series presents the first direct clinical evidence that additively manufactured subperiosteal implants can achieve osseointegration in humans, challenging decades of historical assumptions about their biocompatibility. These custom implants may offer a viable alternative for severely resorbed ridges where endosteal implants are not feasible.",
-      "specialty": "Implants",
-      "clinical_score": 8,
-      "novelty_score": 9,
-      "journal_score": 0.24,
-      "badges": [
-        "Clinical",
-        "Novel"
-      ]
-    },
-    {
-      "pmid": "42148534",
-      "title": "Clinical and Psychosocial Predisposing Factors Associated With Anaesthesia Failure During Non-Surgical Root Canal Treatment: A National Dental Practice-Based Research Network Study.",
-      "journal": "International endodontic journal",
-      "journal_url": "https://onlinelibrary.wiley.com/journal/13652591",
-      "pub_date": "May 2026",
-      "authors": [
-        "Liu",
-        "Ordinola-Zapata",
-        "Noblett"
-      ],
-      "doi": "10.1111/iej.70171",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42148534/",
-      "summary": "A large practice-based network study (1,723 patients) identified patient demographic, psychosocial, and clinical predictors of local anesthesia failure during endodontic treatment, enabling dentists to anticipate and mitigate this common problem. These findings provide actionable guidance for improving clinical outcomes in routine endodontic practice.",
-      "specialty": "Endo",
-      "clinical_score": 8,
-      "novelty_score": 7,
-      "journal_score": 2.01,
+      "journal_score": 2.29,
       "badges": [
         "Clinical",
         "Novel"
@@ -128,7 +61,7 @@
       ],
       "doi": "10.1111/prd.70046",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42178740/",
-      "summary": "This review provides guidance on the integrated, interdisciplinary management of advanced periodontitis with pathologic tooth migration, emphasizing the strategic sequencing of regenerative periodontal surgery and orthodontic therapy. Practicing clinicians can apply these principles to stage IV case type 2 patients, though treatment remains complex and requires specialist collaboration.",
+      "summary": "This narrative review outlines an interdisciplinary approach combining regenerative periodontal surgery with orthodontics for stage IV periodontitis patients with pathologic tooth migration. The evidence-based sequencing of treatments provides practical guidance for specialists managing complex periodontal cases, though implementation requires careful case selection and coordination.",
       "specialty": "Perio",
       "clinical_score": 7,
       "novelty_score": 5,
@@ -138,90 +71,157 @@
       ]
     },
     {
-      "pmid": "42200307",
-      "title": "Long-Term Associations between Water Fluoridation and Adult Dental Caries.",
-      "journal": "Journal of dental research",
-      "journal_url": "http://www.sagepub.com/journals/Journal201925/title",
+      "pmid": "42175573",
+      "title": "Implant therapy in older patients: Prosthetic considerations and biomechanical implications for frailty/aging.",
+      "journal": "Periodontology 2000",
+      "journal_url": "https://onlinelibrary.wiley.com/journal/16000757",
       "pub_date": "May 2026",
       "authors": [
-        "Cronin",
-        "Moore",
-        "Woods"
+        "Yeh",
+        "Chiou",
+        "Yoon"
       ],
-      "doi": "10.1177/00220345261442955",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42200307/",
-      "summary": "This study leverages the natural experiment of Ireland's different water fluoridation policies (Republic versus Northern Ireland) to examine long-term associations between community water fluoridation exposure and adult dental caries in populations with near-lifetime exposure. The findings provide robust population-level evidence regarding fluoridation's sustained protective effect on permanent tooth caries in adulthood.",
-      "specialty": "Public Health",
-      "clinical_score": 8,
-      "novelty_score": 6,
-      "journal_score": 2.63,
+      "doi": "10.1111/prd.70058",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42175573/",
+      "summary": "This narrative review synthesizes evidence on implant therapy in older adults, addressing frailty, comorbidities, and biomechanical design modifications (e.g., shortened dental arches, implant-assisted removable prostheses) tailored to aging patients. The evidence-based guidance helps practitioners optimize implant treatment planning and prosthetic design for this growing demographic.",
+      "specialty": "Implants",
+      "clinical_score": 7,
+      "novelty_score": 5,
+      "journal_score": 5.0,
       "badges": [
         "Clinical"
       ]
     },
     {
-      "pmid": "41992810",
-      "title": "Association Between Change in Dental Hygiene Practices and Incidence of Dementia.",
-      "journal": "Journal of clinical periodontology",
-      "journal_url": "https://onlinelibrary.wiley.com/journal/1600051X",
+      "pmid": "42244335",
+      "title": "Periodontitis, Edentulism, and Risk of Metabolic Syndrome, Obesity, and Dyslipidemia: A Systematic Review With Meta-Analyses.",
+      "journal": "Journal of periodontal research",
+      "journal_url": "https://onlinelibrary.wiley.com/journal/16000765",
       "pub_date": "Jun 2026",
       "authors": [
-        "Park",
-        "Lee",
-        "Park"
+        "Barbato",
+        "di Martino",
+        "Castelluzzo"
       ],
-      "doi": "10.1111/jcpe.70128",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41992810/",
-      "summary": "Adults who increased toothbrushing to 3 or more times daily showed significantly lower dementia risk over 14 years in a large Korean cohort study. This finding supports stronger public health messaging about oral hygiene and suggests a potential modifiable risk factor for cognitive decline.",
-      "specialty": "Public Health",
+      "doi": "10.1111/jre.70130",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42244335/",
+      "summary": "A meta-analysis of 10 longitudinal studies confirms that periodontitis and edentulism significantly increase the risk of metabolic syndrome, obesity, and dyslipidemia, reinforcing the systemic health implications of poor oral health. General dentists can use these findings to counsel patients that treating periodontal disease may reduce cardiometabolic risk.",
+      "specialty": "Perio",
+      "clinical_score": 8,
+      "novelty_score": 6,
+      "journal_score": 2.95,
+      "badges": [
+        "Clinical"
+      ]
+    },
+    {
+      "pmid": "42258076",
+      "title": "From force to resorption: mechanotransduction, osteoclasts, prevention.",
+      "journal": "Progress in orthodontics",
+      "journal_url": "http://www.progressinorthodontics.com/",
+      "pub_date": "Jun 2026",
+      "authors": [
+        "Shen",
+        "Xia",
+        "Han"
+      ],
+      "doi": "10.7717/peerj.3513",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42258076/",
+      "summary": "This comprehensive review clarifies how orthodontic forces trigger a cascade of cellular mechanisms that drive root resorption through osteoclast activation, and identifies modifiable mechanical variables (force magnitude, direction, duration) that clinicians can control to reduce this risk. Practitioners can now apply specific force parameters and monitoring strategies based on mechanistic understanding rather than empirical rules alone.",
+      "specialty": "Ortho",
       "clinical_score": 7,
       "novelty_score": 7,
-      "journal_score": 2.34,
+      "journal_score": 2.35,
       "badges": [
         "Clinical",
         "Novel"
       ]
     },
     {
-      "pmid": "41992493",
-      "title": "Surgical Reconstructive Peri-Implantitis Treatment for 3- and 4-Wall Bone Defects: A Single-Blind Randomised Controlled Trial With a 1-Year Follow-Up.",
-      "journal": "Journal of clinical periodontology",
-      "journal_url": "https://onlinelibrary.wiley.com/journal/1600051X",
+      "pmid": "41871798",
+      "title": "Effectiveness of silver diamine fluoride and fluoride varnish in arresting caries lesions in permanent molars: A randomized controlled trial.",
+      "journal": "Journal of dentistry",
+      "journal_url": "https://www.journals.elsevier.com/journal-of-dentistry",
       "pub_date": "Jun 2026",
       "authors": [
-        "Hakkers",
-        "de Waal",
-        "Gareb"
+        "Sabino E Andrade",
+        "Piovesan",
+        "Queiroz"
       ],
-      "doi": "10.1111/jcpe.13070",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41992493/",
-      "summary": "A randomized controlled trial found that reconstructive surgery with bone graft and membrane during peri-implantitis treatment improved bone level recovery and probing depth reduction at 1 year. This evidence supports the use of guided bone regeneration in surgical management of advanced peri-implant defects.",
-      "specialty": "Implants",
+      "doi": "10.1016/j.jdent.2026.106647",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41871798/",
+      "summary": "Silver diamine fluoride (38%) arrested caries in 88% of permanent molars versus 66% with fluoride varnish in a randomized controlled trial of 165 children. This finding provides clear clinical guidance for pediatric dentists choosing chemically arrestive agents, though SDF's cosmetic staining remains a limiting factor.",
+      "specialty": "Pediatric",
       "clinical_score": 8,
       "novelty_score": 6,
-      "journal_score": 2.34,
+      "journal_score": 2.29,
       "badges": [
         "Clinical"
       ]
     },
     {
-      "pmid": "42192196",
-      "title": "Long-Term Outcomes of 6-mm Short Implants Supporting Splinted Crowns in Posterior Regions: A 12-Year Prospective Multi-Centre Single-Cohort Study.",
-      "journal": "Journal of clinical periodontology",
-      "journal_url": "https://onlinelibrary.wiley.com/journal/1600051X",
+      "pmid": "42208797",
+      "title": "Long-term outcomes of ceramic crowns in adolescents and young adults with amelogenesis imperfecta: final follow-up of a randomized split-mouth controlled clinical trial.",
+      "journal": "Journal of dentistry",
+      "journal_url": "https://www.journals.elsevier.com/journal-of-dentistry",
       "pub_date": "May 2026",
       "authors": [
-        "Wei",
-        "Sui",
-        "Zhang"
+        "Pousette Lundgren",
+        "Vestlund",
+        "Dahll\u00f6f"
       ],
-      "doi": "10.1111/jcpe.70144",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42192196/",
-      "summary": "A 12-year prospective multicenter study of 95 short (6 mm) implants supporting splinted crowns in posterior regions reported high implant survival and good patient satisfaction, demonstrating that short implants are a viable alternative to bone augmentation. These long-term clinical outcomes provide strong evidence for a technique that many general dentists and specialists can adopt for patients with limited vertical bone.",
-      "specialty": "Implants",
+      "doi": "10.1016/j.jdent.2026.106794",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42208797/",
+      "summary": "This long-term (13.4-year) randomized controlled trial in adolescents and young adults with amelogenesis imperfecta found that both zirconia and pressed-ceramic crowns performed well clinically over a decade, providing strong evidence for early prosthetic treatment in this population. General dentists and specialists can confidently recommend ceramic crowns as a durable solution for AI patients, though the findings are specific to this rare enamel disorder.",
+      "specialty": "Restorative",
       "clinical_score": 8,
       "novelty_score": 6,
-      "journal_score": 2.34,
+      "journal_score": 2.29,
+      "badges": [
+        "Clinical"
+      ]
+    },
+    {
+      "pmid": "42208796",
+      "title": "Reverse compensation technique achieves accurate robotic-assisted implant surgery in the anterior maxilla: A prospective case series.",
+      "journal": "Journal of dentistry",
+      "journal_url": "https://www.journals.elsevier.com/journal-of-dentistry",
+      "pub_date": "May 2026",
+      "authors": [
+        "Fu",
+        "Gu",
+        "Wu"
+      ],
+      "doi": "10.1016/j.jdent.2026.106797",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42208796/",
+      "summary": "This prospective case series demonstrates that the Reverse Compensation Technique improves robotic-assisted implant placement accuracy in the anterior maxilla with challenging bone anatomy, with acceptable surgical outcomes and low adverse events. The technique offers a practical innovation for specialists managing complex anterior cases, though further multicenter validation would strengthen the evidence base.",
+      "specialty": "Implants",
+      "clinical_score": 7,
+      "novelty_score": 7,
+      "journal_score": 2.29,
+      "badges": [
+        "Clinical",
+        "Novel"
+      ]
+    },
+    {
+      "pmid": "42244033",
+      "title": "The Survival and Success of Teeth With External Cervical Resorption: A Multi-Centre, Retrospective Study.",
+      "journal": "International endodontic journal",
+      "journal_url": "https://onlinelibrary.wiley.com/journal/13652591",
+      "pub_date": "Jun 2026",
+      "authors": [
+        "Patel",
+        "Walsh",
+        "Villa"
+      ],
+      "doi": "10.1111/iej.70172",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42244033/",
+      "summary": "This multi-centre retrospective study of 296 teeth with external cervical resorption demonstrates that survival and success outcomes vary substantially based on treatment approach (periodic review, external repair, or internal repair). Treatment selection informed by lesion characteristics and imaging can guide endodontists toward the most predictable management strategy.",
+      "specialty": "Endo",
+      "clinical_score": 8,
+      "novelty_score": 6,
+      "journal_score": 2.01,
       "badges": [
         "Clinical"
       ]
