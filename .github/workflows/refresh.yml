@@ -1,0 +1,40 @@
+name: Refresh articles
+
+on:
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install -r scripts/requirements.txt
+
+      - name: Fetch articles from PubMed
+        run: python scripts/fetch_articles.py --fetch-only
+
+      - name: Build journal quality metrics
+        run: python scripts/build_journal_metrics.py
+
+      - name: Score articles with Claude
+        run: python scripts/fetch_articles.py --score-only
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Write articles.json
+        run: python scripts/fetch_articles.py --output-only
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "This Month in Dentistry Bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add docs/articles.json
+          git diff --cached --quiet || git commit -m "chore: refresh articles $(date -u +%Y-%m-%d)"
+          git push
