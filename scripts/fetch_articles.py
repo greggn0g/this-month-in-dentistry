@@ -38,6 +38,11 @@ MODEL = "claude-opus-5"
 SCORE_LIMIT = 450
 # Finalists that go through the comparative re-rank.
 FINALIST_LIMIT = 30
+# Technique and case papers held open in the finalist pool. The composite
+# ranks them below trial designs by construction (level 4-5 evidence, lower
+# citedness journals), so without a reserved slot the comparative pass never
+# sees one and none can ever be published.
+TECHNIQUE_FINALISTS = 8
 # How many make the final published list.
 PUBLISH_LIMIT = 12
 # Refuse to publish if fewer than this many articles survived scoring.
@@ -779,6 +784,16 @@ def rerank_finalists(scored: list[dict]) -> list[dict]:
 
     ordered = sorted(scored, key=composite, reverse=True)
     finalists = ordered[:FINALIST_LIMIT]
+
+    # Put the best technique/case work in front of the model even though the
+    # composite ranks it lower, and let the comparison decide on merit.
+    seen_ids = {a["pmid"] for a in finalists}
+    extras = [a for a in ordered
+              if is_technique_article(a) and a["pmid"] not in seen_ids][:TECHNIQUE_FINALISTS]
+    finalists += extras
+    if extras:
+        print(f"  Added {len(extras)} technique/case candidates to the comparison")
+
     if len(finalists) <= PUBLISH_LIMIT:
         return ordered
 
@@ -789,14 +804,15 @@ def rerank_finalists(scored: list[dict]) -> list[dict]:
             f"Title: {a['title']}\n"
             f"Journal: {a['journal']}\n"
             f"Specialty: {a.get('specialty')} | Evidence level: {a.get('evidence_level')} "
-            f"| Human study: {a.get('human_study')} | n: {a.get('sample_size') or 'not stated'}\n"
+            f"| Human study: {a.get('human_study')} | n: {a.get('sample_size') or 'not stated'}"
+            f"{' | TECHNIQUE/CASE PAPER' if is_technique_article(a) else ''}\n"
             f"Summary: {a.get('summary', '')}\n"
             f"Bottom line: {a.get('bottom_line', '')}\n---\n"
         )
 
     prompt = f"""You are assembling the final issue of a monthly research digest for a practising periodontist.
 
-Below are {len(finalists)} candidate papers that already passed screening and scoring. They were scored in separate batches, so their numbers are not calibrated against each other. Your job is to compare them directly and choose the {PUBLISH_LIMIT} most worth this reader's attention, in order.
+Below are {len(finalists)} candidate papers that already passed screening and scoring. Candidates marked TECHNIQUE/CASE PAPER are surgical technique or case work, included deliberately — see the note on them below. They were scored in separate batches, so their numbers are not calibrated against each other. Your job is to compare them directly and choose the {PUBLISH_LIMIT} most worth this reader's attention, in order.
 
 Rank on what would genuinely change or inform practice:
 - Strength of evidence and study design carry more weight than novelty or journal name.
