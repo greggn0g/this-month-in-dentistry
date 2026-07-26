@@ -11,7 +11,10 @@ import requests
 from pathlib import Path
 
 FETCH_CACHE  = Path(__file__).parent / ".cache" / "fetched_articles.json"
-CACHE_FILE   = Path(__file__).parent / ".cache" / "journal_metrics.json"
+# Tracked in git, not in .cache — a CI runner starts with an empty .cache, so
+# keeping this here means each run only looks up journals it hasn't seen before
+# instead of re-querying OpenAlex 130+ times.
+CACHE_FILE   = Path(__file__).parent / "data" / "journal_metrics.json"
 OPENALEX_URL = "https://api.openalex.org/sources"
 HEADERS      = {"User-Agent": "this-month-in-dentistry/1.0 (mailto:contact@example.com)"}
 
@@ -61,6 +64,7 @@ def main():
         print("Run fetch_articles.py --fetch-only first.")
         return
 
+    CACHE_FILE.parent.mkdir(parents=True, exist_ok=True)
     articles = json.loads(FETCH_CACHE.read_text())
     # Unique full journal names from our actual fetched data
     journal_names = sorted(set(a["journal"] for a in articles if a.get("journal")))

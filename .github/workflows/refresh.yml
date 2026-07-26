@@ -6,6 +6,12 @@ on:
     # 08:00 UTC on the 1st of every month
     - cron: '0 8 1 * *'
 
+# Two runs at once (e.g. a manual trigger during the scheduled run) race on the
+# push and one loses. Serialise them instead.
+concurrency:
+  group: refresh-articles
+  cancel-in-progress: false
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
@@ -34,10 +40,22 @@ jobs:
       - name: Write articles.json
         run: python scripts/fetch_articles.py --output-only
 
+      - name: Verify articles.json is not empty
+        run: |
+          count=$(python -c "import json;print(len(json.load(open('docs/articles.json'))['articles']))")
+          echo "articles.json contains $count articles"
+          if [ "$count" -lt 5 ]; then
+            echo "::error::Refusing to publish $count articles"
+            exit 1
+          fi
+
       - name: Commit and push if changed
         run: |
           git config user.name "This Month in Dentistry Bot"
           git config user.email "bot@users.noreply.github.com"
-          git add docs/articles.json
-          git diff --cached --quiet || git commit -m "chore: refresh articles $(date -u +%Y-%m-%d)"
+          git add docs/articles.json scripts/data/journal_metrics.json
+          git diff --cached --quiet && echo "Nothing changed" && exit 0
+          git commit -m "chore: refresh articles $(date -u +%Y-%m-%d)"
+          # Another run may have pushed while this one was scoring.
+          git pull --rebase origin "${GITHUB_REF_NAME}"
           git push

@@ -1,0 +1,970 @@
+{
+  "Acta odontologica Scandinavica": {
+    "openalex_id": "https://openalex.org/S42091764",
+    "name": "Acta Odontologica Scandinavica",
+    "issn_l": "0001-6357",
+    "issns": [
+      "0001-6357",
+      "1502-3850"
+    ],
+    "2yr_citedness": 1.7207207207207207,
+    "h_index": 134,
+    "homepage_url": "http://www.tandfonline.com/iode"
+  },
+  "American journal of orthodontics and dentofacial orthopedics : official publication of the American Association of Orthodontists, its constituent societies, and the American Board of Orthodontics": {
+    "openalex_id": "",
+    "name": "",
+    "issn_l": "",
+    "issns": [],
+    "2yr_citedness": 0,
+    "h_index": 0
+  },
+  "Archives of oral biology": {
+    "openalex_id": "https://openalex.org/S44717366",
+    "name": "Archives of Oral Biology",
+    "issn_l": "0003-9969",
+    "issns": [
+      "0003-9969",
+      "1879-1506"
+    ],
+    "2yr_citedness": 2.1403812824956674,
+    "h_index": 170,
+    "homepage_url": "https://www.journals.elsevier.com/archives-of-oral-biology"
+  },
+  "Australian dental journal": {
+    "openalex_id": "https://openalex.org/S183124736",
+    "name": "Australian Dental Journal",
+    "issn_l": "0045-0421",
+    "issns": [
+      "0045-0421",
+      "1834-7819"
+    ],
+    "2yr_citedness": 1.68,
+    "h_index": 125,
+    "homepage_url": "https://onlinelibrary.wiley.com/journal/18347819"
+  },
+  "Australian endodontic journal : the journal of the Australian Society of Endodontology Inc": {
+    "openalex_id": "",
+    "name": "",
+    "issn_l": "",
+    "issns": [],
+    "2yr_citedness": 0,
+    "h_index": 0
+  },
+  "BMC oral health": {
+    "openalex_id": "https://openalex.org/S60760007",
+    "name": "BMC Oral Health",
+    "issn_l": "1472-6831",
+    "issns": [
+      "1472-6831"
+    ],
+    "2yr_citedness": 3.507406069364162,
+    "h_index": 115,
+    "homepage_url": "https://bmcoralhealth.biomedcentral.com/"
+  },
+  "Brazilian dental journal": {
+    "openalex_id": "https://openalex.org/S203922328",
+    "name": "Brazilian Dental Journal",
+    "issn_l": "0103-6440",
+    "issns": [
+      "0103-6440",
+      "1806-4760"
+    ],
+    "2yr_citedness": 1.7393617021276595,
+    "h_index": 84,
+    "homepage_url": "http://www.scielo.br/scielo.php?script=sci_serial&pid=0103-6440&lng=en&nrm=iso"
+  },
+  "Brazilian oral research": {
+    "openalex_id": "https://openalex.org/S202798957",
+    "name": "Brazilian Oral Research",
+    "issn_l": "1806-8324",
+    "issns": [
+      "1806-8324",
+      "1807-3107"
+    ],
+    "2yr_citedness": 2.0947712418300655,
+    "h_index": 86,
+    "homepage_url": "https://www.scielo.br/j/bor/"
+  },
+  "British dental journal": {
+    "openalex_id": "https://openalex.org/S4393917285",
+    "name": "British dental nurses journal",
+    "issn_l": "1356-3807",
+    "issns": [
+      "1356-3807"
+    ],
+    "2yr_citedness": 0,
+    "h_index": 0,
+    "homepage_url": ""
+  },
+  "Caries research": {
+    "openalex_id": "https://openalex.org/S23327923",
+    "name": "Caries Research",
+    "issn_l": "0008-6568",
+    "issns": [
+      "0008-6568",
+      "1421-976X"
+    ],
+    "2yr_citedness": 2.152317880794702,
+    "h_index": 162,
+    "homepage_url": "http://www.karger.com/journal/home/224219"
+  },
+  "Clinical advances in periodontics": {
+    "openalex_id": "https://openalex.org/S2764953765",
+    "name": "Clinical Advances in Periodontics",
+    "issn_l": "2163-0097",
+    "issns": [
+      "2163-0097",
+      "2573-8046"
+    ],
+    "2yr_citedness": 0.7696335078534031,
+    "h_index": 20,
+    "homepage_url": "https://aap.onlinelibrary.wiley.com/journal/21630097"
+  },
+  "Clinical oral implants research": {
+    "openalex_id": "https://openalex.org/S122069063",
+    "name": "Clinical Oral Implants Research",
+    "issn_l": "0905-7161",
+    "issns": [
+      "0905-7161",
+      "1600-0501"
+    ],
+    "2yr_citedness": 3.6328828828828827,
+    "h_index": 230,
+    "homepage_url": "https://onlinelibrary.wiley.com/journal/16000501"
+  },
+  "Clinical oral investigations": {
+    "openalex_id": "https://openalex.org/S103663982",
+    "name": "Clinical Oral Investigations",
+    "issn_l": "1432-6981",
+    "issns": [
+      "1432-6981",
+      "1436-3771"
+    ],
+    "2yr_citedness": 3.792929292929293,
+    "h_index": 140,
+    "homepage_url": "https://link.springer.com/journal/784"
+  },
+  "Community dental health": {
+    "openalex_id": "https://openalex.org/S164743771",
+    "name": "Community Dental Health",
+    "issn_l": "0265-539X",
+    "issns": [
+      "0265-539X",
+      "2515-1746"
+    ],
+    "2yr_citedness": 0.31085043988269795,
+    "h_index": 22,
+    "homepage_url": ""
+  },
+  "Community dentistry and oral epidemiology": {
+    "openalex_id": "https://openalex.org/S52877392",
+    "name": "Community Dentistry And Oral Epidemiology",
+    "issn_l": "0301-5661",
+    "issns": [
+      "0301-5661",
+      "1600-0528"
+    ],
+    "2yr_citedness": 2.123404255319149,
+    "h_index": 163,
+    "homepage_url": "https://onlinelibrary.wiley.com/journal/16000528"
+  },
+  "Compendium of continuing education in dentistry (Jamesburg, N.J. : 1995)": {
+    "openalex_id": "",
+    "name": "",
+    "issn_l": "",
+    "issns": [],
+    "2yr_citedness": 0,
+    "h_index": 0
+  },
+  "Cranio : the journal of craniomandibular practice": {
+    "openalex_id": "",
+    "name": "",
+    "issn_l": "",
+    "issns": [],
+    "2yr_citedness": 0,
+    "h_index": 0
+  },
+  "Dental and medical problems": {
+    "openalex_id": "https://openalex.org/S2764459393",
+    "name": "Dental and Medical Problems",
+    "issn_l": "1644-387X",
+    "issns": [
+      "1644-387X",
+      "2300-9020"
+    ],
+    "2yr_citedness": 3.2564102564102564,
+    "h_index": 36,
+    "homepage_url": "http://www.dmp.umed.wroc.pl/en/home/"
+  },
+  "Dental clinics of North America": {
+    "openalex_id": "https://openalex.org/S164311417",
+    "name": "Dental Clinics of North America",
+    "issn_l": "0011-8532",
+    "issns": [
+      "0011-8532",
+      "1558-0512"
+    ],
+    "2yr_citedness": 0.8162162162162162,
+    "h_index": 125,
+    "homepage_url": "https://www.journals.elsevier.com/dental-clinics-of-north-america"
+  },
+  "Dental materials : official publication of the Academy of Dental Materials": {
+    "openalex_id": "",
+    "name": "",
+    "issn_l": "",
+    "issns": [],
+    "2yr_citedness": 0,
+    "h_index": 0
+  },
+  "Dental materials journal": {
+    "openalex_id": "https://openalex.org/S202133162",
+    "name": "Dental Materials Journal",
+    "issn_l": "0287-4547",
+    "issns": [
+      "0287-4547",
+      "1881-1361"
+    ],
+    "2yr_citedness": 1.8995433789954337,
+    "h_index": 96,
+    "homepage_url": ""
+  },
+  "Dental traumatology : official publication of International Association for Dental Traumatology": {
+    "openalex_id": "",
+    "name": "",
+    "issn_l": "",
+    "issns": [],
+    "2yr_citedness": 0,
+    "h_index": 0
+  },
+  "Dento maxillo facial radiology": {
+    "openalex_id": "https://openalex.org/S4393914656",
+    "name": "Dento-maxillo-facial Radiology. Supplement",
+    "issn_l": "0349-490X",
+    "issns": [
+      "0349-490X"
+    ],
+    "2yr_citedness": 0,
+    "h_index": 0,
+    "homepage_url": ""
+  },
+  "European archives of paediatric dentistry : official journal of the European Academy of Paediatric Dentistry": {
+    "openalex_id": "",
+    "name": "",
+    "issn_l": "",
+    "issns": [],
+    "2yr_citedness": 0,
+    "h_index": 0
+  },
+  "European endodontic journal": {
+    "openalex_id": "https://openalex.org/S4210222611",
+    "name": "European Endodontic Journal",
+    "issn_l": "2548-0839",
+    "issns": [
+      "2548-0839"
+    ],
+    "2yr_citedness": 1.9861111111111112,
+    "h_index": 24,
+    "homepage_url": "http://www.eurendodj.com/eng/Anasayfa"
+  },
+  "European journal of dental education : official journal of the Association for Dental Education in Europe": {
+    "openalex_id": "",
+    "name": "",
+    "issn_l": "",
+    "issns": [],
+    "2yr_citedness": 0,
+    "h_index": 0
+  },
+  "European journal of oral sciences": {
+    "openalex_id": "https://openalex.org/S40136177",
+    "name": "European Journal Of Oral Sciences",
+    "issn_l": "0909-8836",
+    "issns": [
+      "0909-8836",
+      "1600-0722"
+    ],
+    "2yr_citedness": 1.3396226415094339,
+    "h_index": 149,
+    "homepage_url": "https://onlinelibrary.wiley.com/journal/16000722"
+  },
+  "European journal of paediatric dentistry": {
+    "openalex_id": "https://openalex.org/S2764683509",
+    "name": "European journal of paediatric dentistry",
+    "issn_l": "1591-996X",
+    "issns": [
+      "1591-996X"
+    ],
+    "2yr_citedness": 0,
+    "h_index": 3,
+    "homepage_url": ""
+  },
+  "Evidence-based dentistry": {
+    "openalex_id": "https://openalex.org/S207236353",
+    "name": "Evidence-Based Dentistry",
+    "issn_l": "1462-0049",
+    "issns": [
+      "1462-0049",
+      "1476-5446"
+    ],
+    "2yr_citedness": 2.5285714285714285,
+    "h_index": 39,
+    "homepage_url": "https://www.nature.com/ebd/"
+  },
+  "Facial plastic surgery : FPS": {
+    "openalex_id": "",
+    "name": "",
+    "issn_l": "",
+    "issns": [],
+    "2yr_citedness": 0,
+    "h_index": 0
+  },
+  "General dentistry": {
+    "openalex_id": "https://openalex.org/S2754140220",
+    "name": "General dentistry",
+    "issn_l": "0363-6771",
+    "issns": [
+      "0363-6771"
+    ],
+    "2yr_citedness": 0,
+    "h_index": 7,
+    "homepage_url": ""
+  },
+  "Gerodontology": {
+    "openalex_id": "https://openalex.org/S187533064",
+    "name": "Gerodontology",
+    "issn_l": "0734-0664",
+    "issns": [
+      "0734-0664",
+      "1741-2358"
+    ],
+    "2yr_citedness": 1.4075829383886256,
+    "h_index": 91,
+    "homepage_url": "https://onlinelibrary.wiley.com/journal/17412358"
+  },
+  "Head & face medicine": {
+    "openalex_id": "https://openalex.org/S4480651",
+    "name": "Head & Face Medicine",
+    "issn_l": "1746-160X",
+    "issns": [
+      "1746-160X"
+    ],
+    "2yr_citedness": 3.2857142857142856,
+    "h_index": 72,
+    "homepage_url": "https://head-face-med.biomedcentral.com/"
+  },
+  "Indian journal of dental research : official publication of Indian Society for Dental Research": {
+    "openalex_id": "",
+    "name": "",
+    "issn_l": "",
+    "issns": [],
+    "2yr_citedness": 0,
+    "h_index": 0
+  },
+  "International dental journal": {
+    "openalex_id": "https://openalex.org/S143937555",
+    "name": "International Dental Journal",
+    "issn_l": "0020-6539",
+    "issns": [
+      "0020-6539",
+      "1875-595X"
+    ],
+    "2yr_citedness": 0.991960696739616,
+    "h_index": 107,
+    "homepage_url": "https://www.journals.elsevier.com/international-dental-journal"
+  },
+  "International endodontic journal": {
+    "openalex_id": "https://openalex.org/S50094856",
+    "name": "International Endodontic Journal",
+    "issn_l": "0143-2885",
+    "issns": [
+      "0143-2885",
+      "1365-2591"
+    ],
+    "2yr_citedness": 4.3107344632768365,
+    "h_index": 209,
+    "homepage_url": "https://onlinelibrary.wiley.com/journal/13652591"
+  },
+  "International journal of computerized dentistry": {
+    "openalex_id": "https://openalex.org/S2764466809",
+    "name": "International journal of computerized dentistry",
+    "issn_l": "1463-4201",
+    "issns": [
+      "1463-4201"
+    ],
+    "2yr_citedness": 0,
+    "h_index": 7,
+    "homepage_url": ""
+  },
+  "International journal of dental hygiene": {
+    "openalex_id": "https://openalex.org/S78692710",
+    "name": "International Journal of Dental Hygiene",
+    "issn_l": "1601-5029",
+    "issns": [
+      "1601-5029",
+      "1601-5037"
+    ],
+    "2yr_citedness": 1.2579505300353357,
+    "h_index": 68,
+    "homepage_url": "https://onlinelibrary.wiley.com/journal/16015037"
+  },
+  "International journal of implant dentistry": {
+    "openalex_id": "https://openalex.org/S2737902342",
+    "name": "International Journal of Implant Dentistry",
+    "issn_l": "2198-4034",
+    "issns": [
+      "2198-4034"
+    ],
+    "2yr_citedness": 4.342391304347826,
+    "h_index": 54,
+    "homepage_url": "https://journalimplantdent.springeropen.com"
+  },
+  "International journal of oral and maxillofacial surgery": {
+    "openalex_id": "https://openalex.org/S38907727",
+    "name": "International Journal of Oral and Maxillofacial Surgery",
+    "issn_l": "0901-5027",
+    "issns": [
+      "0901-5027",
+      "1399-0020"
+    ],
+    "2yr_citedness": 0.5452971725331794,
+    "h_index": 151,
+    "homepage_url": "https://www.sciencedirect.com/journal/international-journal-of-oral-and-maxillofacial-surgery"
+  },
+  "International journal of oral science": {
+    "openalex_id": "https://openalex.org/S44743489",
+    "name": "International Journal of Oral Science",
+    "issn_l": "1674-2818",
+    "issns": [
+      "1674-2818",
+      "2049-3169"
+    ],
+    "2yr_citedness": 15.042553191489361,
+    "h_index": 95,
+    "homepage_url": "https://www.nature.com/ijos/"
+  },
+  "International journal of paediatric dentistry": {
+    "openalex_id": "https://openalex.org/S57016439",
+    "name": "International Journal of Paediatric Dentistry",
+    "issn_l": "0960-7439",
+    "issns": [
+      "0960-7439",
+      "1365-263X"
+    ],
+    "2yr_citedness": 2.132686084142395,
+    "h_index": 108,
+    "homepage_url": "http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1365-263X"
+  },
+  "International orthodontics": {
+    "openalex_id": "https://openalex.org/S75749457",
+    "name": "International Orthodontics",
+    "issn_l": "1761-7227",
+    "issns": [
+      "1761-7227",
+      "1879-680X"
+    ],
+    "2yr_citedness": 1.674074074074074,
+    "h_index": 34,
+    "homepage_url": "https://www.journals.elsevier.com/international-orthodontics"
+  },
+  "JDR clinical and translational research": {
+    "openalex_id": "",
+    "name": "",
+    "issn_l": "",
+    "issns": [],
+    "2yr_citedness": 0,
+    "h_index": 0
+  },
+  "Journal of Indian Prosthodontic Society": {
+    "openalex_id": "https://openalex.org/S54749395",
+    "name": "The Journal of Indian Prosthodontic Society",
+    "issn_l": "0972-4052",
+    "issns": [
+      "0972-4052",
+      "1998-4057"
+    ],
+    "2yr_citedness": 1.4556962025316456,
+    "h_index": 50,
+    "homepage_url": "http://www.j-ips.org/"
+  },
+  "Journal of applied oral science : revista FOB": {
+    "openalex_id": "",
+    "name": "",
+    "issn_l": "",
+    "issns": [],
+    "2yr_citedness": 0,
+    "h_index": 0
+  },
+  "Journal of clinical periodontology": {
+    "openalex_id": "https://openalex.org/S61859066",
+    "name": "Journal Of Clinical Periodontology",
+    "issn_l": "0303-6979",
+    "issns": [
+      "0303-6979",
+      "1600-051X"
+    ],
+    "2yr_citedness": 5.031055900621118,
+    "h_index": 267,
+    "homepage_url": "https://onlinelibrary.wiley.com/journal/1600051X"
+  },
+  "Journal of cranio-maxillo-facial surgery : official publication of the European Association for Cranio-Maxillo-Facial Surgery": {
+    "openalex_id": "",
+    "name": "",
+    "issn_l": "",
+    "issns": [],
+    "2yr_citedness": 0,
+    "h_index": 0
+  },
+  "Journal of dental education": {
+    "openalex_id": "https://openalex.org/S121799786",
+    "name": "Journal of Dental Education",
+    "issn_l": "0022-0337",
+    "issns": [
+      "0022-0337",
+      "1930-7837"
+    ],
+    "2yr_citedness": 1.4617940199335548,
+    "h_index": 116,
+    "homepage_url": "https://onlinelibrary.wiley.com/journal/19307837"
+  },
+  "Journal of dental research": {
+    "openalex_id": "https://openalex.org/S62865007",
+    "name": "Journal of Dental Research",
+    "issn_l": "0022-0345",
+    "issns": [
+      "0022-0345",
+      "1544-0591"
+    ],
+    "2yr_citedness": 5.559386973180077,
+    "h_index": 301,
+    "homepage_url": "http://www.sagepub.com/journals/Journal201925/title"
+  },
+  "Journal of dentistry": {
+    "openalex_id": "https://openalex.org/S191726168",
+    "name": "Journal of Dentistry",
+    "issn_l": "0300-5712",
+    "issns": [
+      "0300-5712",
+      "1879-176X"
+    ],
+    "2yr_citedness": 4.884551031790296,
+    "h_index": 191,
+    "homepage_url": "https://www.journals.elsevier.com/journal-of-dentistry"
+  },
+  "Journal of endodontics": {
+    "openalex_id": "https://openalex.org/S90605627",
+    "name": "Journal of Endodontics",
+    "issn_l": "0099-2399",
+    "issns": [
+      "0099-2399",
+      "1878-3554"
+    ],
+    "2yr_citedness": 3.3968023255813953,
+    "h_index": 268,
+    "homepage_url": "http://www.elsevier.com/wps/find/journaldescription.cws_home/707230/description"
+  },
+  "Journal of esthetic and restorative dentistry : official publication of the American Academy of Esthetic Dentistry ... [et al.]": {
+    "openalex_id": "",
+    "name": "",
+    "issn_l": "",
+    "issns": [],
+    "2yr_citedness": 0,
+    "h_index": 0
+  },
+  "Journal of oral and maxillofacial surgery : official journal of the American Association of Oral and Maxillofacial Surgeons": {
+    "openalex_id": "",
+    "name": "",
+    "issn_l": "",
+    "issns": [],
+    "2yr_citedness": 0,
+    "h_index": 0
+  },
+  "Journal of oral biosciences": {
+    "openalex_id": "https://openalex.org/S33990022",
+    "name": "Journal of Oral Biosciences",
+    "issn_l": "1349-0079",
+    "issns": [
+      "1349-0079",
+      "1880-3865"
+    ],
+    "2yr_citedness": 1.95,
+    "h_index": 39,
+    "homepage_url": "https://www.journals.elsevier.com/journal-of-oral-biosciences"
+  },
+  "Journal of oral pathology & medicine : official publication of the International Association of Oral Pathologists and the American Academy of Oral Pathology": {
+    "openalex_id": "",
+    "name": "",
+    "issn_l": "",
+    "issns": [],
+    "2yr_citedness": 0,
+    "h_index": 0
+  },
+  "Journal of oral rehabilitation": {
+    "openalex_id": "https://openalex.org/S75186586",
+    "name": "Journal of Oral Rehabilitation",
+    "issn_l": "0305-182X",
+    "issns": [
+      "0305-182X",
+      "1365-2842"
+    ],
+    "2yr_citedness": 2.661581137309293,
+    "h_index": 156,
+    "homepage_url": "https://onlinelibrary.wiley.com/journal/13652842"
+  },
+  "Journal of oral science": {
+    "openalex_id": "https://openalex.org/S107985729",
+    "name": "Journal of Oral Science",
+    "issn_l": "1343-4934",
+    "issns": [
+      "1343-4934",
+      "1880-4926"
+    ],
+    "2yr_citedness": 1.3818181818181818,
+    "h_index": 82,
+    "homepage_url": ""
+  },
+  "Journal of orofacial orthopedics = Fortschritte der Kieferorthopadie : Organ/official journal Deutsche Gesellschaft fur Kieferorthopadie": {
+    "openalex_id": "",
+    "name": "",
+    "issn_l": "",
+    "issns": [],
+    "2yr_citedness": 0,
+    "h_index": 0
+  },
+  "Journal of periodontal research": {
+    "openalex_id": "https://openalex.org/S195000414",
+    "name": "Journal of Periodontal Research",
+    "issn_l": "0022-3484",
+    "issns": [
+      "0022-3484",
+      "1600-0765"
+    ],
+    "2yr_citedness": 6.309523809523809,
+    "h_index": 156,
+    "homepage_url": "https://onlinelibrary.wiley.com/journal/16000765"
+  },
+  "Journal of periodontology": {
+    "openalex_id": "https://openalex.org/S58498366",
+    "name": "Journal of Periodontology",
+    "issn_l": "0022-3492",
+    "issns": [
+      "0022-3492",
+      "1049-8885",
+      "1943-3670"
+    ],
+    "2yr_citedness": 2.7786069651741294,
+    "h_index": 261,
+    "homepage_url": "https://aap.onlinelibrary.wiley.com/journal/19433670"
+  },
+  "Journal of prosthodontic research": {
+    "openalex_id": "https://openalex.org/S4210224484",
+    "name": "Journal of Prosthodontic Research",
+    "issn_l": "1883-1958",
+    "issns": [
+      "1883-1958",
+      "1883-9207",
+      "2212-4632"
+    ],
+    "2yr_citedness": 2.62882096069869,
+    "h_index": 76,
+    "homepage_url": "https://www.journals.elsevier.com/journal-of-prosthodontic-research"
+  },
+  "Journal of prosthodontics : official journal of the American College of Prosthodontists": {
+    "openalex_id": "",
+    "name": "",
+    "issn_l": "",
+    "issns": [],
+    "2yr_citedness": 0,
+    "h_index": 0
+  },
+  "Journal of public health dentistry": {
+    "openalex_id": "https://openalex.org/S18039248",
+    "name": "Journal of Public Health Dentistry",
+    "issn_l": "0022-4006",
+    "issns": [
+      "0022-4006",
+      "1752-7325"
+    ],
+    "2yr_citedness": 1.3151515151515152,
+    "h_index": 101,
+    "homepage_url": "https://onlinelibrary.wiley.com/journal/17527325"
+  },
+  "Journal of stomatology, oral and maxillofacial surgery": {
+    "openalex_id": "",
+    "name": "",
+    "issn_l": "",
+    "issns": [],
+    "2yr_citedness": 0,
+    "h_index": 0
+  },
+  "Journal of the American Dental Association (1939)": {
+    "openalex_id": "",
+    "name": "",
+    "issn_l": "",
+    "issns": [],
+    "2yr_citedness": 0,
+    "h_index": 0
+  },
+  "Journal of the World federation of orthodontists": {
+    "openalex_id": "https://openalex.org/S2764635754",
+    "name": "Journal of the World Federation of Orthodontists",
+    "issn_l": "2212-4438",
+    "issns": [
+      "2212-4438"
+    ],
+    "2yr_citedness": 0.37394451145958985,
+    "h_index": 29,
+    "homepage_url": "https://www.journals.elsevier.com/journal-of-the-world-federation-of-orthodontists"
+  },
+  "Journal of veterinary dentistry": {
+    "openalex_id": "https://openalex.org/S4029648",
+    "name": "Journal of Veterinary Dentistry",
+    "issn_l": "0898-7564",
+    "issns": [
+      "0898-7564",
+      "2470-4083"
+    ],
+    "2yr_citedness": 0.45925925925925926,
+    "h_index": 45,
+    "homepage_url": "https://us.sagepub.com/en-us/nam/journal-of-veterinary-dentistry/journal202557"
+  },
+  "Medicina oral, patologia oral y cirugia bucal": {
+    "openalex_id": "",
+    "name": "",
+    "issn_l": "",
+    "issns": [],
+    "2yr_citedness": 0,
+    "h_index": 0
+  },
+  "Odontology": {
+    "openalex_id": "https://openalex.org/S151842127",
+    "name": "Odontology",
+    "issn_l": "1618-1247",
+    "issns": [
+      "1618-1247",
+      "1618-1255"
+    ],
+    "2yr_citedness": 1.9391891891891893,
+    "h_index": 64,
+    "homepage_url": "https://link.springer.com/journal/10266"
+  },
+  "Operative dentistry": {
+    "openalex_id": "https://openalex.org/S92279829",
+    "name": "Operative Dentistry",
+    "issn_l": "0361-7734",
+    "issns": [
+      "0361-7734",
+      "1559-2863"
+    ],
+    "2yr_citedness": 1.5561224489795917,
+    "h_index": 101,
+    "homepage_url": "http://www.jopdentonline.org"
+  },
+  "Oral and maxillofacial surgery": {
+    "openalex_id": "https://openalex.org/S152450253",
+    "name": "Oral and Maxillofacial Surgery",
+    "issn_l": "1865-1550",
+    "issns": [
+      "1865-1550",
+      "1865-1569"
+    ],
+    "2yr_citedness": 1.5931477516059958,
+    "h_index": 57,
+    "homepage_url": "https://www.springer.com/journal/10006"
+  },
+  "Oral diseases": {
+    "openalex_id": "https://openalex.org/S144270092",
+    "name": "Oral Diseases",
+    "issn_l": "1354-523X",
+    "issns": [
+      "1354-523X",
+      "1601-0825"
+    ],
+    "2yr_citedness": 2.426865671641791,
+    "h_index": 139,
+    "homepage_url": "https://onlinelibrary.wiley.com/journal/16010825"
+  },
+  "Oral health & preventive dentistry": {
+    "openalex_id": "https://openalex.org/S117780675",
+    "name": "Oral health & preventive dentistry",
+    "issn_l": "1602-1622",
+    "issns": [
+      "1602-1622"
+    ],
+    "2yr_citedness": 0,
+    "h_index": 12,
+    "homepage_url": "https://ohpd.quintessenz.de/index.php?doc=home"
+  },
+  "Oral surgery, oral medicine, oral pathology and oral radiology": {
+    "openalex_id": "",
+    "name": "",
+    "issn_l": "",
+    "issns": [],
+    "2yr_citedness": 0,
+    "h_index": 0
+  },
+  "Orthodontics & craniofacial research": {
+    "openalex_id": "https://openalex.org/S157154877",
+    "name": "Orthodontics and Craniofacial Research",
+    "issn_l": "1601-6335",
+    "issns": [
+      "1601-6335",
+      "1601-6343"
+    ],
+    "2yr_citedness": 2.557840616966581,
+    "h_index": 83,
+    "homepage_url": "https://onlinelibrary.wiley.com/journal/16016343"
+  },
+  "Periodontology 2000": {
+    "openalex_id": "https://openalex.org/S43912546",
+    "name": "Periodontology 2000",
+    "issn_l": "0906-6713",
+    "issns": [
+      "0906-6713",
+      "1600-0757"
+    ],
+    "2yr_citedness": 14.953216374269006,
+    "h_index": 205,
+    "homepage_url": "https://onlinelibrary.wiley.com/journal/16000757"
+  },
+  "Progress in orthodontics": {
+    "openalex_id": "https://openalex.org/S192792821",
+    "name": "Progress in Orthodontics",
+    "issn_l": "1723-7785",
+    "issns": [
+      "1723-7785",
+      "2196-1042"
+    ],
+    "2yr_citedness": 4.905797101449275,
+    "h_index": 72,
+    "homepage_url": "http://www.progressinorthodontics.com/"
+  },
+  "Quintessence international (Berlin, Germany : 1985)": {
+    "openalex_id": "",
+    "name": "",
+    "issn_l": "",
+    "issns": [],
+    "2yr_citedness": 0,
+    "h_index": 0
+  },
+  "Special care in dentistry : official publication of the American Association of Hospital Dentists, the Academy of Dentistry for the Handicapped, and the American Society for Geriatric Dentistry": {
+    "openalex_id": "",
+    "name": "",
+    "issn_l": "",
+    "issns": [],
+    "2yr_citedness": 0,
+    "h_index": 0
+  },
+  "Swiss dental journal": {
+    "openalex_id": "https://openalex.org/S4306531433",
+    "name": "SWISS DENTAL JOURNAL SSO \u2013 Science and Clinical Topics",
+    "issn_l": "2296-6498",
+    "issns": [
+      "2296-6498",
+      "2296-6501"
+    ],
+    "2yr_citedness": 2.735632183908046,
+    "h_index": 28,
+    "homepage_url": "http://www.sso.ch/index.cfm?1ba2e085d9d9424c4eb6e4967d19f13b"
+  },
+  "The Angle orthodontist": {
+    "openalex_id": "https://openalex.org/S177636448",
+    "name": "The Angle Orthodontist",
+    "issn_l": "0003-3219",
+    "issns": [
+      "0003-3219",
+      "1945-7103"
+    ],
+    "2yr_citedness": 2.392857142857143,
+    "h_index": 118,
+    "homepage_url": "http://www.angleorthodontist.org/anglonline/?request=index-html"
+  },
+  "The British journal of oral & maxillofacial surgery": {
+    "openalex_id": "",
+    "name": "",
+    "issn_l": "",
+    "issns": [],
+    "2yr_citedness": 0,
+    "h_index": 0
+  },
+  "The Chinese journal of dental research": {
+    "openalex_id": "https://openalex.org/S2764962441",
+    "name": "The Chinese journal of dental research : the official journal of the Scientific Section of the Chinese Stomatological Association",
+    "issn_l": null,
+    "issns": null,
+    "2yr_citedness": 0,
+    "h_index": 3,
+    "homepage_url": ""
+  },
+  "The Cleft palate-craniofacial journal : official publication of the American Cleft Palate-Craniofacial Association": {
+    "openalex_id": "",
+    "name": "",
+    "issn_l": "",
+    "issns": [],
+    "2yr_citedness": 0,
+    "h_index": 0
+  },
+  "The International journal of oral & maxillofacial implants": {
+    "openalex_id": "https://openalex.org/S27890766",
+    "name": "The International Journal of Oral & Maxillofacial Implants",
+    "issn_l": "0882-2786",
+    "issns": [
+      "0882-2786",
+      "1086-6019",
+      "1942-4434"
+    ],
+    "2yr_citedness": 1.0782312925170068,
+    "h_index": 86,
+    "homepage_url": "http://www.quintpub.com/journals/omi/gp.php?journal_name=OMI&name_abbr=IJOMI"
+  },
+  "The International journal of periodontics & restorative dentistry": {
+    "openalex_id": "https://openalex.org/S113438027",
+    "name": "The International Journal of Periodontics & Restorative Dentistry",
+    "issn_l": "0198-7569",
+    "issns": [
+      "0198-7569",
+      "1945-3388"
+    ],
+    "2yr_citedness": 1.108695652173913,
+    "h_index": 55,
+    "homepage_url": "http://www.quintpub.com"
+  },
+  "The International journal of prosthodontics": {
+    "openalex_id": "https://openalex.org/S22377106",
+    "name": "The International Journal of Prosthodontics",
+    "issn_l": "0893-2174",
+    "issns": [
+      "0893-2174",
+      "1942-4426"
+    ],
+    "2yr_citedness": 1.39375,
+    "h_index": 55,
+    "homepage_url": "http://www.quintpub.com/journals/ijp/gp.php?journal_name=IJP&name_abbr=IJP"
+  },
+  "The Journal of craniofacial surgery": {
+    "openalex_id": "",
+    "name": "",
+    "issn_l": "",
+    "issns": [],
+    "2yr_citedness": 0,
+    "h_index": 0
+  },
+  "The Journal of prosthetic dentistry": {
+    "openalex_id": "https://openalex.org/S4210197238",
+    "name": "The Journal of Prosthetic and Implant Dentistry",
+    "issn_l": "2582-5224",
+    "issns": [
+      "2582-5224"
+    ],
+    "2yr_citedness": 0.12903225806451613,
+    "h_index": 3,
+    "homepage_url": ""
+  },
+  "Zhonghua kou qiang yi xue za zhi = Zhonghua kouqiang yixue zazhi = Chinese journal of stomatology": {
+    "openalex_id": "",
+    "name": "",
+    "issn_l": "",
+    "issns": [],
+    "2yr_citedness": 0,
+    "h_index": 0
+  }
+}

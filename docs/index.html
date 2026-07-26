@@ -4,191 +4,227 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>This Month in Dentistry</title>
+<meta name="description" content="A monthly digest of dental research, ranked for a practicing periodontist." />
+<meta name="color-scheme" content="light dark" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<div class="shell">
+<div class="page">
 
-  <div class="topbar">
-    <div class="masthead">This Month <em>in Dentistry</em></div>
-    <div class="topbar-right">
-      <span class="updated-label" id="updated-label"></span>
+  <header class="masthead">
+    <div class="masthead-top">
+      <span class="wordmark">This Month <em>in</em> Dentistry</span>
+      <span class="issue" id="issue"></span>
     </div>
-  </div>
+    <p class="thesis" id="thesis">Loading…</p>
+  </header>
 
-  <div class="stats-strip" id="stats-strip"></div>
+  <main class="layout" id="layout" hidden>
+    <nav class="index" aria-label="Articles in this issue">
+      <ol class="rows" id="rows"></ol>
+    </nav>
+    <article class="card" id="card" aria-live="polite"></article>
+  </main>
 
-  <div class="body-grid">
-    <aside class="sidebar">
-      <div class="sidebar-header" id="sidebar-count">Loading…</div>
-      <div class="sidebar-list" id="sidebar-list"></div>
-    </aside>
+  <div id="notices"></div>
 
-    <main class="detail-pane" id="detail-pane">
-      <p class="empty">Loading articles…</p>
-    </main>
-  </div>
+  <footer class="colophon">
+    <p>
+      <a href="https://pubmed.ncbi.nlm.nih.gov/">PubMed</a> ·
+      scored with <a href="https://claude.com">Claude</a> ·
+      metrics from <a href="https://openalex.org/">OpenAlex</a>
+    </p>
+    <p class="colophon-note">Refreshes on the 1st of each month. Perio and implant work is weighted up.</p>
+  </footer>
 
 </div>
 
 <script>
-let allArticles = [];
-let selectedIndex = 0;
+const FOCUS = ['Perio', 'Implants'];
 
-function escapeHtml(str) {
-  return String(str)
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;');
+/* Standard levels of evidence, strongest first. */
+const EVIDENCE = {
+  1: 'Level 1 — systematic review or meta-analysis of randomised trials',
+  2: 'Level 2 — randomised controlled trial',
+  3: 'Level 3 — controlled, cohort or registry study',
+  4: 'Level 4 — case-control, cross-sectional or retrospective series',
+  5: 'Level 5 — preclinical, in-vitro, animal or opinion',
+};
+
+let ALL = [];
+let selected = 0;
+
+function escapeHtml(v) {
+  return String(v ?? '')
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
-function renderSidebar() {
-  const list = document.getElementById('sidebar-list');
-  const count = document.getElementById('sidebar-count');
-  count.textContent = `${allArticles.length} articles`;
+/* Clinical and novelty are whole numbers; journal quality is a 0–5 float and
+   always carries a decimal so the column stays aligned. */
+const fmtInt = n => String(Math.round(Number(n) || 0));
+const fmtDec = n => (Number(n) || 0).toFixed(1);
 
-  if (allArticles.length === 0) {
-    list.innerHTML = '<p class="empty">No articles found.</p>';
-    return;
-  }
-
-  list.innerHTML = allArticles.map((a, i) => `
-    <button class="sidebar-row ${i === selectedIndex ? 'active' : ''}" data-index="${i}">
-      <span class="row-specialty">${escapeHtml(a.specialty)}</span>
-      <span class="row-title">${escapeHtml(a.title)}</span>
-      <span class="row-scores">
-        <span class="row-chip">CLIN <strong>${a.clinical_score}</strong></span>
-        <span class="row-chip">NOV <strong>${a.novelty_score}</strong></span>
-      </span>
-    </button>
-  `).join('');
-
-  list.querySelectorAll('.sidebar-row').forEach(btn => {
-    btn.addEventListener('click', () => {
-      selectedIndex = parseInt(btn.dataset.index, 10);
-      renderSidebar();
-      renderDetail();
-    });
-  });
+/* Weight rather than fill: readable even where a browser strips backgrounds. */
+function band(value, max) {
+  const r = (Number(value) || 0) / max;
+  return r >= 0.8 ? 'is-high' : r >= 0.6 ? 'is-mid' : 'is-low';
 }
 
-function renderDetail() {
-  const pane = document.getElementById('detail-pane');
-  if (allArticles.length === 0) {
-    pane.innerHTML = '<p class="empty">No articles found.</p>';
-    return;
-  }
+const formatIssue = iso =>
+  iso ? new Date(iso).toLocaleDateString('en-US', { month: 'long', year: 'numeric' }) : '';
 
-  const a = allArticles[selectedIndex];
-  const badges = (a.badges || []).map(b => `<span class="tag tag-type">${escapeHtml(b)}</span>`).join('');
-  const authorStr = a.authors && a.authors.length
-    ? a.authors.slice(0, 3).join(', ') + (a.authors.length > 3 ? ' et al.' : '')
+const authorList = a => (a.authors || []).filter(Boolean).join(', ');
+
+function link(href, text) {
+  if (!href) return text ? escapeHtml(text) : '';
+  return `<a href="${escapeHtml(href)}" target="_blank" rel="noopener">${escapeHtml(text || href)}</a>`;
+}
+
+/* One label/value pair. Empty values return nothing, so a missing DOI or
+   journal URL leaves no orphaned label behind. */
+function fact(label, valueHtml) {
+  if (!valueHtml) return '';
+  return `<div class="fact"><dt>${escapeHtml(label)}</dt><dd>${valueHtml}</dd></div>`;
+}
+
+function evidenceText(a) {
+  const base = EVIDENCE[a.evidence_level];
+  if (!base) return '';
+  const notes = [];
+  if (a.human_study === false) notes.push('not a human study');
+  if (a.sample_size) notes.push(`n = ${Number(a.sample_size).toLocaleString()}`);
+  return escapeHtml(base) + (notes.length ? ` <span class="note">(${escapeHtml(notes.join('; '))})</span>` : '');
+}
+
+/* ------------------------------------------------- left index ------- */
+
+function indexRow(a, i) {
+  const focus = FOCUS.includes(a.specialty);
+  const source = escapeHtml(a.journal || '');
+  return `
+    <li>
+      <button type="button" class="pick${focus ? ' is-focus' : ''}${i === selected ? ' is-on' : ''}"
+              data-i="${i}" aria-current="${i === selected}">
+        <span class="pick-rank">${String(i + 1).padStart(2, '0')}</span>
+        <span class="pick-body">
+          <span class="pick-title">${escapeHtml(a.title)}</span>
+          <span class="pick-foot">
+            <span class="pick-source">${source}</span>
+            <span class="pick-scores">
+              <span class="${band(a.clinical_score, 10)}">${fmtInt(a.clinical_score)}</span>
+              <span class="${band(a.novelty_score, 10)}">${fmtInt(a.novelty_score)}</span>
+              <span class="${band(a.journal_score, 5)}">${fmtDec(a.journal_score)}</span>
+            </span>
+          </span>
+        </span>
+      </button>
+    </li>`;
+}
+
+/* ------------------------------------------------- right card ------- */
+
+function cardHtml(a) {
+  if (!a) return '';
+  const journal = a.journal
+    ? (a.journal_url ? link(a.journal_url, a.journal) : escapeHtml(a.journal))
     : '';
 
-  const clinPct = (a.clinical_score / 10 * 100).toFixed(0);
-  const novPct  = (a.novelty_score  / 10 * 100).toFixed(0);
-  const jourPct = (a.journal_score  / 5  * 100).toFixed(0);
+  const facts = [
+    fact('Journal', journal),
+    fact('Published', a.pub_date ? escapeHtml(a.pub_date) : ''),
+    fact('Authors', authorList(a) ? escapeHtml(authorList(a)) : ''),
+    fact('Evidence', evidenceText(a)),
+    fact('Design', (a.study_types || []).length ? escapeHtml(a.study_types.join(', ')) : ''),
+    fact('DOI', a.doi ? link(`https://doi.org/${a.doi}`, a.doi) : ''),
+  ].join('');
 
-  pane.innerHTML = `
-    <div class="eyebrow-row">
-      <span class="tag tag-specialty">${escapeHtml(a.specialty)}</span>
-      ${badges}
-    </div>
+  const badges = (a.badges || [])
+    .map(b => `<span class="badge">${escapeHtml(b)}</span>`).join('');
 
-    <h1 class="detail-title"><a class="detail-title-link" href="${a.pubmed_url}" target="_blank" rel="noopener">${escapeHtml(a.title)}</a></h1>
-
-    <p class="detail-body">${a.summary}</p>
-
-    <div class="score-module">
-      <div class="score-col">
-        <span class="score-label">Clinical relevance</span>
-        <div class="score-track"><div class="score-fill clinical" style="width:${clinPct}%"></div></div>
-        <span class="score-value">${a.clinical_score}</span>
-      </div>
-      <div class="score-col">
-        <span class="score-label">Novelty</span>
-        <div class="score-track"><div class="score-fill novelty" style="width:${novPct}%"></div></div>
-        <span class="score-value">${a.novelty_score}</span>
-      </div>
-      <div class="score-col">
-        <span class="score-label">Journal quality</span>
-        <div class="score-track"><div class="score-fill journal" style="width:${jourPct}%"></div></div>
-        <span class="score-value">${a.journal_score}</span>
-      </div>
-    </div>
-
-    <div class="detail-footer">
-      <div class="footer-meta">
-        <a class="footer-journal" href="${a.journal_url || a.pubmed_url}" target="_blank" rel="noopener">${escapeHtml(a.journal)}</a>
-        <span class="footer-authors">${escapeHtml(authorStr)}${authorStr ? ' · ' : ''}${escapeHtml(a.pub_date || '')}</span>
-      </div>
-      <a class="cta-button" href="${a.pubmed_url}" target="_blank" rel="noopener">
-        View article
-        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-          <path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </a>
-    </div>
-
-    <p class="credit-line">
-      Powered by <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">PubMed</a>
-      &amp; <a href="https://anthropic.com" target="_blank" rel="noopener">Claude</a>
-    </p>
-  `;
+  return `
+    <div class="card-eyebrow">${badges}</div>
+    <h2 class="card-title">${escapeHtml(a.title)}</h2>
+    ${a.summary ? `<p class="card-summary">${escapeHtml(a.summary)}</p>` : ''}
+    ${a.bottom_line ? `<p class="card-bottom">
+        <span class="bottom-label">Bottom line</span>${escapeHtml(a.bottom_line)}</p>` : ''}
+    <ul class="scores">
+      <li><span class="score-name">Clinical relevance</span>
+          <span class="score-value ${band(a.clinical_score, 10)}">${fmtInt(a.clinical_score)}/10</span></li>
+      <li><span class="score-name">Novelty</span>
+          <span class="score-value ${band(a.novelty_score, 10)}">${fmtInt(a.novelty_score)}/10</span></li>
+      <li><span class="score-name">Journal quality</span>
+          <span class="score-value ${band(a.journal_score, 5)}">${fmtDec(a.journal_score)}/5</span></li>
+    </ul>
+    ${facts ? `<dl class="facts">${facts}</dl>` : ''}
+    ${a.pubmed_url ? `<p class="card-go">${link(a.pubmed_url, 'Read on PubMed →')}</p>` : ''}`;
 }
 
-function renderStats(data) {
-  const strip = document.getElementById('stats-strip');
-  const stats = [
-    data.journals_scanned != null ? { label: 'Journals scanned', value: data.journals_scanned } : null,
-    data.articles_scanned != null ? { label: 'Articles screened', value: data.articles_scanned } : null,
-    { label: 'Top picks selected', value: allArticles.length },
-  ].filter(Boolean);
+function render() {
+  document.getElementById('rows').innerHTML = ALL.map(indexRow).join('');
+  document.getElementById('card').innerHTML = cardHtml(ALL[selected]);
+}
 
-  if (!stats.length) {
-    strip.innerHTML = '';
-    return;
+function select(i, scroll) {
+  if (i === selected || !ALL[i]) return;
+  selected = i;
+  render();
+  document.querySelector(`.pick[data-i="${i}"]`)?.focus();
+  if (scroll && matchMedia('(max-width: 56rem)').matches) {
+    const behavior = matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+    document.getElementById('card').scrollIntoView({ behavior, block: 'start' });
   }
-
-  strip.innerHTML = stats.map(s => `
-    <div class="stat-pill">
-      <span class="stat-value">${s.value.toLocaleString()}</span>
-      <span class="stat-label">${escapeHtml(s.label)}</span>
-    </div>
-  `).join('');
 }
 
-function formatUpdatedLabel(iso) {
-  if (!iso) return '';
-  const d = new Date(iso);
-  const formatted = d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
-  return `Updated ${formatted} · Last 30 days`;
+function notice(heading, body) {
+  document.getElementById('notices').innerHTML =
+    `<div class="notice"><h2>${escapeHtml(heading)}</h2><p>${body}</p></div>`;
 }
 
-async function init() {
-  const resp = await fetch('articles.json');
-  const data = await resp.json();
-  allArticles = (data.articles || []).slice().sort((a, b) => {
-    const compositeA = a.clinical_score + a.novelty_score + a.journal_score;
-    const compositeB = b.clinical_score + b.novelty_score + b.journal_score;
-    return compositeB - compositeA;
-  });
-
-  document.getElementById('updated-label').textContent = formatUpdatedLabel(data.generated_at);
-
-  renderStats(data);
-  renderSidebar();
-  renderDetail();
-}
-
-init().catch(err => {
-  document.getElementById('detail-pane').innerHTML =
-    `<p class="empty">Failed to load articles: ${err.message}</p>`;
+document.addEventListener('click', e => {
+  const pick = e.target.closest('.pick');
+  if (pick) select(Number(pick.dataset.i), true);
 });
+
+/* Up/down move through the issue the way you'd expect in a list. */
+document.addEventListener('keydown', e => {
+  if (!e.target.closest('.pick')) return;
+  if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+    e.preventDefault();
+    select(selected + (e.key === 'ArrowDown' ? 1 : -1), false);
+  }
+});
+
+fetch('articles.json')
+  .then(r => { if (!r.ok) throw new Error(`${r.status} ${r.statusText}`); return r.json(); })
+  .then(data => {
+    ALL = data.articles || [];
+    document.getElementById('issue').textContent = formatIssue(data.generated_at);
+
+    if (!ALL.length) {
+      document.getElementById('thesis').textContent = 'This issue is empty.';
+      notice('No articles in this issue',
+        'The pipeline ran but published nothing. Check the latest ' +
+        '<a href="https://github.com/greggn0g/this-month-in-dentistry/actions">Refresh articles</a> run.');
+      return;
+    }
+
+    document.getElementById('thesis').innerHTML =
+      `<b>${Number(data.articles_scanned || 0).toLocaleString()}</b> papers across ` +
+      `<b>${escapeHtml(data.journals_scanned ?? 0)}</b> journals, narrowed to <b>${ALL.length}</b>.`;
+
+    document.getElementById('layout').hidden = false;
+    render();
+  })
+  .catch(err => {
+    document.getElementById('thesis').textContent = 'This issue could not be loaded.';
+    notice("Couldn't load the issue",
+      `articles.json failed to load: ${escapeHtml(err.message)}. Try reloading the page.`);
+  });
 </script>
 </body>
 </html>
