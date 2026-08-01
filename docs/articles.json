@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-26T05:43:10.493423+00:00",
+  "generated_at": "2026-08-01T10:04:34.886742+00:00",
   "journals_scanned": 133,
-  "articles_scanned": 2341,
-  "articles_scored": 441,
+  "articles_scanned": 2020,
+  "articles_scored": 445,
   "articles": [
     {
       "pmid": "42448456",
@@ -17,11 +17,11 @@
       ],
       "doi": "10.1111/jcpe.70162",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42448456/",
-      "summary": "In 177,410 implants across 59,238 patients, survival fell from 97.6% for first implants to 92.2% for second and 88.5% for third or later placements at the same site, with hazard ratios of 4.6 and 5.7 respectively. Site-level failure history is a strong independent risk factor that should be discussed before replacing a failed implant.",
-      "bottom_line": "Quantify and disclose the roughly 5-fold higher failure risk when re-implanting a previously failed site, and consider alternatives or staged site reconstruction.",
+      "summary": "In 177,410 implants across 59,238 patients, survival fell from 97.6% for first implants at a site to 92.2% for second (HR 4.60) and 88.5% for third or later placements (HR 5.71). Replacement implants at a previously failed site carry a substantially higher failure risk that should be quantified during consent and may justify site preparation or an alternative plan.",
+      "bottom_line": "Explicitly warn patients that a replacement implant at a failed site has roughly 4\u20136 times the failure hazard, and consider grafting or alternative restorative options.",
       "specialty": "Implants",
       "clinical_score": 8,
-      "novelty_score": 6,
+      "novelty_score": 5,
       "journal_score": 2.52,
       "evidence_level": 3,
       "human_study": true,
@@ -34,67 +34,33 @@
       ]
     },
     {
-      "pmid": "42363664",
-      "title": "Effects of non-surgical periodontal therapy on intrabony periodontal defects at different re-evaluation time points: A systematic review of randomized controlled trials and clinical recommendations.",
-      "journal": "Periodontology 2000",
-      "journal_url": "https://onlinelibrary.wiley.com/journal/16000757",
-      "pub_date": "Jun 2026",
+      "pmid": "42192196",
+      "title": "Long-Term Outcomes of 6-mm Short Implants Supporting Splinted Crowns in Posterior Regions: A 12-Year Prospective Multi-Centre Single-Cohort Study.",
+      "journal": "Journal of clinical periodontology",
+      "journal_url": "https://onlinelibrary.wiley.com/journal/1600051X",
+      "pub_date": "Aug 2026",
       "authors": [
-        "Ramaglia",
-        "Iorio-Siciliano",
-        "Mauriello"
+        "Wei",
+        "Sui",
+        "Zhang"
       ],
-      "doi": "10.1111/prd.70061",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42363664/",
-      "summary": "A meta-analysis of eight RCTs found probing depth in intrabony defects keeps improving well beyond the usual 3-month re-evaluation, with significant further reductions from 3 to 6 months (SMD \u22121.07) and 6 to 9 months (SMD \u22121.35). This argues against deciding on surgical re-entry at the conventional early re-evaluation point.",
-      "bottom_line": "Delay the surgical decision for intrabony defects to at least 6-9 months after non-surgical therapy rather than re-evaluating at 3 months.",
-      "specialty": "Perio",
+      "doi": "10.19439/j.sjos.2021.03.014",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42192196/",
+      "summary": "In 45 patients with 95 splinted 6-mm implants in posterior sites, 12-year cumulative survival was 92.6% with essentially no marginal bone loss (-0.09 mm), though peri-implant mucositis affected 37.8% of implants and peri-implantitis 2.7%. This is the longest prospective follow-up supporting short splinted implants as a durable alternative to bone augmentation in atrophic posterior ridges.",
+      "bottom_line": "Offer splinted 6-mm implants with confidence in the resorbed posterior jaw instead of routine vertical augmentation.",
+      "specialty": "Implants",
       "clinical_score": 8,
       "novelty_score": 6,
-      "journal_score": 5.0,
-      "evidence_level": 1,
+      "journal_score": 2.52,
+      "evidence_level": 3,
       "human_study": true,
-      "sample_size": null,
-      "study_types": [],
-      "is_technique": false,
-      "badges": [
-        "Clinical",
-        "Strong evidence",
-        "Your field"
-      ]
-    },
-    {
-      "pmid": "42124342",
-      "title": "Immunomodulators, associated or not with systemic antibiotics, to treat periodontitis: A 1-year multicenter, placebo-controlled, double-blind, randomized clinical trial.",
-      "journal": "Journal of periodontology",
-      "journal_url": "https://aap.onlinelibrary.wiley.com/journal/19433670",
-      "pub_date": "Jul 2026",
-      "authors": [
-        "Castro Dos Santos",
-        "Silva",
-        "Colombo"
-      ],
-      "doi": "10.1111/prd.12616",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42124342/",
-      "summary": "In this 1-year multicenter RCT of 109 stage III/IV periodontitis patients, adjunctive omega-3 plus low-dose aspirin achieved the treatment endpoint (\u22644 sites with PD \u22655 mm) in 57.7% of patients, essentially identical to metronidazole+amoxicillin (58.6%) and combined therapy (57.1%), versus only 23.1% with instrumentation alone. This offers a non-antibiotic adjunct with comparable 1-year clinical benefit for severe periodontitis.",
-      "bottom_line": "Consider omega-3 (3 g) plus 100 mg aspirin for 6 months as an antibiotic-sparing adjunct to subgingival instrumentation in stage III/IV periodontitis.",
-      "specialty": "Perio",
-      "clinical_score": 9,
-      "novelty_score": 8,
-      "journal_score": 1.39,
-      "evidence_level": 2,
-      "human_study": true,
-      "sample_size": 109,
+      "sample_size": 45,
       "study_types": [
-        "Randomized Controlled Trial",
-        "Multicenter Study",
-        "Comparative Study"
+        "Multicenter Study"
       ],
       "is_technique": false,
       "badges": [
         "Clinical",
-        "Novel",
-        "Strong evidence",
         "Your field"
       ]
     },
@@ -111,8 +77,8 @@
       ],
       "doi": "10.1111/jcpe.70167",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42433105/",
-      "summary": "In 40 patients with Grade II mandibular furcation defects, flapless minimally invasive non-surgical therapy with EMD was non-inferior to open MIST + EMD at 9 months (PPD reduction 2.15 vs 2.20 mm; adjusted difference -0.22 mm) with better patient-reported outcomes. A non-surgical EMD approach may deliver equivalent results with less morbidity in these defects.",
-      "bottom_line": "Consider flapless MINST with EMD as a first-line, lower-morbidity option for Class II mandibular furcations, pending longer-term confirmation.",
+      "summary": "In 40 patients with mandibular Class II furcations, flapless MINST with enamel matrix derivative was non-inferior to MIST + EMD at 9 months (PPD reduction 2.15 vs 2.20 mm; adjusted difference -0.22 mm). A non-surgical approach may achieve comparable furcation outcomes with better patient-reported experience.",
+      "bottom_line": "Consider flapless MINST with EMD as a first-line alternative to flap surgery for Class II mandibular furcations, pending longer-term confirmation.",
       "specialty": "Perio",
       "clinical_score": 8,
       "novelty_score": 7,
@@ -130,124 +96,31 @@
       ]
     },
     {
-      "pmid": "42492913",
-      "title": "Surgical Therapy for Peri-Implantitis Using Deproteinised Bovine Bone Mineral With 10% Collagen, Enamel Matrix Derivative and Doxycycline: A Prospective Cohort 10-Year Implant Study.",
-      "journal": "Journal of clinical periodontology",
-      "journal_url": "https://onlinelibrary.wiley.com/journal/1600051X",
-      "pub_date": "Jul 2026",
+      "pmid": "42423273",
+      "title": "Long-Term Incidence of Peri-Implant Conditions: 25-Year Results of The Bernese Prospective Cohort Study.",
+      "journal": "Clinical implant dentistry and related research",
+      "journal_url": "https://onlinelibrary.wiley.com/journal/17088208",
+      "pub_date": "Aug 2026",
       "authors": [
-        "Mercado",
-        "Ivanovski"
+        "Couso-Queiruga",
+        "Roccuzzo",
+        "Raabe"
       ],
-      "doi": "10.1111/jcpe.70175",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42492913/",
-      "summary": "Ten years after reconstructive peri-implantitis surgery with DBBM-collagen, EMD and doxycycline in 30 selected non-smoking patients, 29 implants survived (96.6%), with probing depth falling from 8.9 to 3.1 mm and radiographic bone loss from 57% to 13%. Long-term data of this duration for peri-implantitis surgery are rare and support reconstructive therapy plus rigorous maintenance in well-selected, plaque-controlled non-smokers.",
-      "bottom_line": "In non-smoking, periodontally stable patients, reconstructive peri-implantitis surgery with strict maintenance can keep implants for a decade \u2014 but select cases carefully.",
+      "doi": "10.1111/jcpe.13808",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42423273/",
+      "summary": "In the Bernese prospective cohort, tissue-level implant survival was 98.8% at 10 years and 94.0% at 25 years, with peri-implantitis rising from 3.5% to 9.1% at implant level while mucositis stayed high (76.5%) and only 14.4% of implants remained fully healthy. Long-term implant survival is excellent but peri-implant mucosal health is the exception, not the rule.",
+      "bottom_line": "Quote ~94% 25-year survival to patients while enrolling every implant patient in lifelong peri-implant maintenance.",
       "specialty": "Implants",
-      "clinical_score": 7,
+      "clinical_score": 8,
       "novelty_score": 6,
-      "journal_score": 2.52,
+      "journal_score": 1.81,
       "evidence_level": 3,
       "human_study": true,
-      "sample_size": null,
+      "sample_size": 159,
       "study_types": [],
       "is_technique": false,
       "badges": [
         "Clinical",
-        "Your field"
-      ]
-    },
-    {
-      "pmid": "42017497",
-      "title": "Deep Caries Management: EFCD-ESE-ORCA S3-Level Clinical Practice Guideline.",
-      "journal": "International endodontic journal",
-      "journal_url": "https://onlinelibrary.wiley.com/journal/13652591",
-      "pub_date": "Jul 2026",
-      "authors": [
-        "Schwendicke",
-        "Kosan",
-        "Banerjee"
-      ],
-      "doi": "10.1111/iej.70132",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42017497/",
-      "summary": "An S3-level European guideline synthesising systematic reviews recommends selective/stepwise caries removal, judicious liner use, and vital pulp therapy approaches (direct pulp capping and pulpotomy with hydraulic calcium silicate cements) for deep and extremely deep caries in vital permanent teeth. It provides a consensus standard of care that favours pulp preservation over root canal treatment in deep lesions.",
-      "bottom_line": "Adopt selective caries removal and calcium-silicate vital pulp therapy as the default for deep lesions in vital teeth.",
-      "specialty": "Restorative",
-      "clinical_score": 9,
-      "novelty_score": 6,
-      "journal_score": 2.16,
-      "evidence_level": 1,
-      "human_study": true,
-      "sample_size": null,
-      "study_types": [
-        "Practice Guideline"
-      ],
-      "is_technique": false,
-      "badges": [
-        "Clinical",
-        "Strong evidence"
-      ]
-    },
-    {
-      "pmid": "40302115",
-      "title": "Timing of keratinized mucosa augmentation and peri-implant outcomes: A systematic review and meta-analysis.",
-      "journal": "Journal of prosthodontics : official journal of the American College of Prosthodontists",
-      "journal_url": "",
-      "pub_date": "Jul 2026",
-      "authors": [
-        "Moscowchi",
-        "Amid",
-        "Nahvi"
-      ],
-      "doi": "10.2186/jpr.JPR_D_24_00002",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40302115/",
-      "summary": "Pooling 25 studies (855 patients, 1588 implants), keratinized mucosa width increased substantially after augmentation regardless of timing (MD 5.17 mm), with least shrinkage when performed at second-stage surgery using autogenous graft and most shrinkage when done post-restoratively. Augment keratinized mucosa at implant uncovering rather than waiting until after the prosthesis is delivered.",
-      "bottom_line": "Plan keratinized mucosa augmentation at second-stage surgery with an autogenous graft for the most stable result.",
-      "specialty": "Implants",
-      "clinical_score": 7,
-      "novelty_score": 6,
-      "journal_score": 0.0,
-      "evidence_level": 1,
-      "human_study": true,
-      "sample_size": 855,
-      "study_types": [
-        "Systematic Review",
-        "Meta-Analysis"
-      ],
-      "is_technique": false,
-      "badges": [
-        "Clinical",
-        "Strong evidence",
-        "Your field"
-      ]
-    },
-    {
-      "pmid": "42419681",
-      "title": "Maxillary anterior horizontal ridge reconstruction using computer-guided ridge split and expansion: A randomized clinical trial with a 2-year follow-up.",
-      "journal": "Journal of dentistry",
-      "journal_url": "https://www.journals.elsevier.com/journal-of-dentistry",
-      "pub_date": "Jul 2026",
-      "authors": [
-        "Allam",
-        "Hatata",
-        "Salem"
-      ],
-      "doi": "10.1016/j.jdent.2026.106886",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42419681/",
-      "summary": "In 22 patients undergoing anterior maxillary ridge split with simultaneous implants, computer-guided surgery reduced angular deviation from 10.02\u00b0 to 1.45\u00b0 and entry deviation from 2.16 mm to 0.54 mm, with less marginal bone loss through 24 months. Guided ridge split meaningfully improves implant positioning accuracy and bone maintenance in narrow anterior ridges.",
-      "bottom_line": "Use static guides when performing ridge split and expansion with simultaneous implant placement in the anterior maxilla.",
-      "specialty": "Implants",
-      "clinical_score": 7,
-      "novelty_score": 6,
-      "journal_score": 2.44,
-      "evidence_level": 2,
-      "human_study": true,
-      "sample_size": null,
-      "study_types": [],
-      "is_technique": false,
-      "badges": [
-        "Clinical",
-        "Strong evidence",
         "Your field"
       ]
     },
@@ -264,8 +137,8 @@
       ],
       "doi": "10.1002/jper.70159",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438281/",
-      "summary": "In 133 anterior single implants followed 5 years with ultrasonography, mid-facial mucosal thickness at 3 mm below the margin was the key determinant of soft tissue margin stability, with a threshold of \u22652.23 mm associated with long-term stability; soft tissue dehiscence prevalence rose over time from 51.1% at baseline. This gives a concrete, measurable soft tissue thickness target when planning or augmenting anterior implant sites.",
-      "bottom_line": "Aim for at least ~2.2 mm of peri-implant mucosal thickness apical to the margin in the esthetic zone, augmenting when it is thinner.",
+      "summary": "In 133 anterior single implants followed 5 years, mucosal thickness at 3 mm apical to the margin was the critical determinant of soft tissue margin stability, with a threshold of \u22652.23 mm associated with long-term stability. This gives a concrete, measurable soft-tissue thickness target for anterior implant planning and grafting decisions.",
+      "bottom_line": "Aim for \u22652.2 mm mucosal thickness apical to the margin at anterior implants, grafting soft tissue when it falls short.",
       "specialty": "Implants",
       "clinical_score": 8,
       "novelty_score": 7,
@@ -282,57 +155,85 @@
       ]
     },
     {
-      "pmid": "42387326",
-      "title": "Evaluation of the Adjunctive Use of Er:YAG Laser or Erythritol Air-Polishing in the Non-Surgical Treatment of Peri-Implantitis: A Pilot RCT.",
-      "journal": "Clinical oral implants research",
-      "journal_url": "https://onlinelibrary.wiley.com/journal/16000501",
+      "pmid": "41936474",
+      "title": "Management of pain with oral analgesia after extraction of lower third molars: a network meta-analysis of randomized controlled trials.",
+      "journal": "International journal of oral and maxillofacial surgery",
+      "journal_url": "https://www.sciencedirect.com/journal/international-journal-of-oral-and-maxillofacial-surgery",
+      "pub_date": "Aug 2026",
+      "authors": [
+        "Magesty",
+        "de Souza",
+        "Fernandes"
+      ],
+      "doi": "10.1016/j.ijom.2026.03.020",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41936474/",
+      "summary": "A network meta-analysis of 19 RCTs and 3615 third molar surgeries ranked opioid plus NSAID combinations as the most effective single-dose analgesic strategy for 6-hour total pain relief, with NSAIDs alone next best and all active drugs beating placebo. This supports NSAIDs as the default first-line agent, with an opioid added only when pain is expected to be severe.",
+      "bottom_line": "Prescribe an NSAID as baseline post-extraction analgesia and reserve NSAID-opioid combinations for anticipated severe pain.",
+      "specialty": "Oral Surgery",
+      "clinical_score": 8,
+      "novelty_score": 5,
+      "journal_score": 0.27,
+      "evidence_level": 1,
+      "human_study": true,
+      "sample_size": null,
+      "study_types": [],
+      "is_technique": true,
+      "badges": [
+        "Clinical",
+        "Strong evidence",
+        "Technique"
+      ]
+    },
+    {
+      "pmid": "42492913",
+      "title": "Surgical Therapy for Peri-Implantitis Using Deproteinised Bovine Bone Mineral With 10% Collagen, Enamel Matrix Derivative and Doxycycline: A Prospective Cohort 10-Year Implant Study.",
+      "journal": "Journal of clinical periodontology",
+      "journal_url": "https://onlinelibrary.wiley.com/journal/1600051X",
       "pub_date": "Jul 2026",
       "authors": [
-        "Clementini",
-        "Minoli",
-        "Fabrizi"
+        "Mercado",
+        "Ivanovski"
       ],
-      "doi": "10.1111/clr.70153",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42387326/",
-      "summary": "In 47 patients with peri-implantitis, adding erythritol air-polishing or Er:YAG laser to submarginal titanium curette instrumentation gave no advantage over instrumentation alone, with all groups achieving 1-1.4 mm PPD reduction and 24-36% BoP reduction at 1 month and slight relapse by 6 months. Expensive adjunctive decontamination devices do not improve non-surgical peri-implantitis outcomes in this pilot RCT.",
-      "bottom_line": "Do not invest in laser or air-polishing adjuncts expecting better non-surgical peri-implantitis results.",
+      "doi": "10.1111/jcpe.70175",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42492913/",
+      "summary": "Ten-year follow-up of 30 reconstructively treated peri-implantitis cases showed 96.6% implant survival, probing depth falling from 8.9 to 3.1 mm and radiographic bone loss from 57% to 13% using EDTA decontamination plus DBBM-collagen/EMD/doxycycline with strict maintenance. Long-term data of this length are rare and support reconstructive surgery in compliant non-smokers with rigorous supportive therapy.",
+      "bottom_line": "Offer reconstructive peri-implantitis surgery with this protocol to selected non-smoking, periodontally stable patients, but commit them to lifelong supportive peri-implant care.",
       "specialty": "Implants",
       "clinical_score": 7,
       "novelty_score": 6,
-      "journal_score": 1.82,
-      "evidence_level": 2,
+      "journal_score": 2.52,
+      "evidence_level": 3,
       "human_study": true,
       "sample_size": null,
       "study_types": [],
       "is_technique": false,
       "badges": [
         "Clinical",
-        "Strong evidence",
         "Your field"
       ]
     },
     {
-      "pmid": "42437817",
-      "title": "De-epithelialized gingival unit graft for gingival phenotype modification and root coverage: a randomized controlled trial.",
+      "pmid": "42461435",
+      "title": "Clinical outcomes of free gingival graft, xenogeneic collagen matrix, and acellular dermal matrix for peri-implant keratinized mucosa augmentation: a randomized controlled trial.",
       "journal": "Clinical oral investigations",
       "journal_url": "https://link.springer.com/journal/784",
       "pub_date": "Jul 2026",
       "authors": [
-        "Kacar",
-        "Gurbuz",
-        "Ersoz"
+        "Sun",
+        "Zhao",
+        "Zhang"
       ],
-      "doi": "10.1002/jper.19-0350",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42437817/",
-      "summary": "In 15 patients with bilateral RT1 recessions, a de-epithelialized gingival unit graft under a coronally advanced flap gave greater gingival thickness gain (2.39 vs 1.66 mm) and larger volumetric increase than a conventional de-epithelialized graft, with numerically higher mean (95% vs 75%) and complete (93% vs 67%) root coverage. Harvesting the graft to include the gingival unit is a simple modification that appears to improve phenotype outcomes.",
-      "bottom_line": "Consider harvesting a de-epithelialized gingival unit graft for phenotype modification with CAF, pending larger confirmation.",
-      "specialty": "Perio",
-      "clinical_score": 7,
-      "novelty_score": 6,
+      "doi": "10.1111/clr.13870",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42461435/",
+      "summary": "In 44 implants with KMW <2 mm, free gingival graft with apically positioned flap gave significantly greater 12-month buccal soft-tissue volume (+24.1 mm\u00b3) than acellular dermal matrix (-17.3 mm\u00b3), with xenogeneic matrix intermediate and no significant KMW difference between groups. Substitutes can widen keratinized mucosa but only autogenous FGG reliably adds volume.",
+      "bottom_line": "Use autogenous FGG when peri-implant tissue volume as well as keratinized width is needed; substitutes suffice if width alone is the goal.",
+      "specialty": "Implants",
+      "clinical_score": 8,
+      "novelty_score": 5,
       "journal_score": 1.9,
       "evidence_level": 2,
       "human_study": true,
-      "sample_size": 15,
+      "sample_size": null,
       "study_types": [
         "Randomized Controlled Trial"
       ],
@@ -344,36 +245,120 @@
       ]
     },
     {
-      "pmid": "41870328",
-      "title": "Biomaterial used to counteract ridge reduction following the removal of adjacent teeth: A randomized controlled multicenter study.",
-      "journal": "Journal of periodontology",
-      "journal_url": "https://aap.onlinelibrary.wiley.com/journal/19433670",
+      "pmid": "42449067",
+      "title": "Association between implant adjacency and survival of endodontically treated teeth.",
+      "journal": "Clinical oral investigations",
+      "journal_url": "https://link.springer.com/journal/784",
       "pub_date": "Jul 2026",
       "authors": [
-        "Cecchinato",
-        "Corr\u00e0",
-        "Bressan"
+        "Chen",
+        "Yeh",
+        "Nazeri"
       ],
-      "doi": "10.1002/jper.70084",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41870328/",
-      "summary": "In 42 patients having two adjacent teeth extracted, DBBM-C plus a collagen membrane limited horizontal ridge width loss to 23.0% versus 57.7% with natural healing, and halved vertical height loss (buccal 1.5 vs 3.0 mm) at 6 months. Grafting multi-adjacent extraction sockets meaningfully preserves ridge dimensions for later implant or prosthetic work.",
-      "bottom_line": "Graft adjacent extraction sockets with DBBM-C and a collagen membrane when implant or prosthetic reconstruction is planned.",
-      "specialty": "Perio",
-      "clinical_score": 8,
-      "novelty_score": 6,
-      "journal_score": 1.39,
-      "evidence_level": 2,
+      "doi": "10.1177/0022034515622432",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42449067/",
+      "summary": "In 787 patients, endodontically treated teeth adjacent to implants survived far shorter (44-56 months vs 85-127 months) and had nearly nine-fold higher odds of loss from vertical root fracture (aOR 8.90), with posts adding risk. Placing an implant next to a root-filled tooth may put that tooth at substantial fracture risk.",
+      "bottom_line": "Warn patients and consider cuspal-coverage protection when an endodontically treated tooth neighbours a planned implant.",
+      "specialty": "Endo",
+      "clinical_score": 7,
+      "novelty_score": 7,
+      "journal_score": 1.9,
+      "evidence_level": 3,
       "human_study": true,
-      "sample_size": 42,
-      "study_types": [
-        "Multicenter Study",
-        "Randomized Controlled Trial",
-        "Comparative Study"
-      ],
+      "sample_size": 787,
+      "study_types": [],
       "is_technique": false,
       "badges": [
         "Clinical",
-        "Strong evidence",
+        "Novel"
+      ]
+    },
+    {
+      "pmid": "40036298",
+      "title": "Clinical Outcomes of Periodontal Regenerative Therapy Utilizing the Double-Sided Entire Papilla Preservation (DEPP) Technique for Infrabony Defects: A 12-Month Follow-up Case Series.",
+      "journal": "The International journal of periodontics & restorative dentistry",
+      "journal_url": "http://www.quintpub.com",
+      "pub_date": "Jul 2026",
+      "authors": [
+        "Ogawa",
+        "Aslan",
+        "Goto"
+      ],
+      "doi": "10.11607/prd.7532",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40036298/",
+      "summary": "A case series using the double-sided entire papilla preservation flap with growth factor or enamel matrix derivative plus a bone substitute reported mean probing depth reduction of 5.0 mm and clinical attachment gain of 5.3 mm at 12 months in infrabony defects extending palatally. The magnitude of gain suggests the technique is a useful option for defects that cannot be accessed from the buccal alone.",
+      "bottom_line": "Add DEPP to your flap repertoire for palatally extending infrabony defects, pending controlled comparison.",
+      "specialty": "Perio",
+      "clinical_score": 6,
+      "novelty_score": 5,
+      "journal_score": 0.55,
+      "evidence_level": 4,
+      "human_study": true,
+      "sample_size": null,
+      "study_types": [],
+      "is_technique": true,
+      "badges": [
+        "Technique",
+        "Your field"
+      ]
+    },
+    {
+      "pmid": "40053496",
+      "title": "Treatment of External Cervical Resorption via Surgical Crown Lengthening and Concomitant Placement of a Resin-Modified Glass-Ionomer Restoration: A Case Series with 1- to 4-Year Follow-up.",
+      "journal": "The International journal of periodontics & restorative dentistry",
+      "journal_url": "http://www.quintpub.com",
+      "pub_date": "Jul 2026",
+      "authors": [
+        "Goldberg",
+        "Goldberg",
+        "Rosen"
+      ],
+      "doi": "10.11607/prd.7452",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40053496/",
+      "summary": "Ten external cervical resorption lesions treated by surgical crown lengthening with simultaneous resin-modified glass-ionomer restoration showed high tooth survival over 1-4 years of follow-up. It offers a reproducible, single-visit surgical-restorative protocol for a lesion periodontists are often asked to manage.",
+      "bottom_line": "Consider crown lengthening with concurrent RMGI restoration as a predictable option for accessible external cervical resorption lesions.",
+      "specialty": "Perio",
+      "clinical_score": 7,
+      "novelty_score": 5,
+      "journal_score": 0.55,
+      "evidence_level": 4,
+      "human_study": true,
+      "sample_size": null,
+      "study_types": [],
+      "is_technique": true,
+      "badges": [
+        "Clinical",
+        "Technique",
+        "Your field"
+      ]
+    },
+    {
+      "pmid": "42411510",
+      "title": "Extensive Cervicofacial and Mediastinal Emphysema Following Subgingival Air-Polishing for Peri-Implantitis: A Case Report.",
+      "journal": "Australian dental journal",
+      "journal_url": "https://onlinelibrary.wiley.com/journal/18347819",
+      "pub_date": "Jul 2026",
+      "authors": [
+        "Law",
+        "Omar",
+        "Soh"
+      ],
+      "doi": "10.1111/adj.70056",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42411510/",
+      "summary": "A 32-year-old developed extensive cervicofacial and mediastinal emphysema after subgingival erythritol air-polishing of a peri-implantitis site with a 6-mm pocket and a labial sinus tract, requiring hospital admission though he remained stable. It flags a specific and avoidable risk of a device many periodontists use weekly.",
+      "bottom_line": "Avoid subgingival air-polishing at implant sites with a sinus tract or breached soft tissue, and warn patients about emphysema signs.",
+      "specialty": "Implants",
+      "clinical_score": 7,
+      "novelty_score": 6,
+      "journal_score": 0.84,
+      "evidence_level": 4,
+      "human_study": true,
+      "sample_size": null,
+      "study_types": [],
+      "is_technique": true,
+      "badges": [
+        "Clinical",
+        "Technique",
         "Your field"
       ]
     }

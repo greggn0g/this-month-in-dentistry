@@ -966,5 +966,78 @@
     "issns": [],
     "2yr_citedness": 0,
     "h_index": 0
+  },
+  "Clinical and experimental dental research": {
+    "openalex_id": "https://openalex.org/S4210189330",
+    "name": "Clinical and Experimental Dental Research",
+    "issn_l": "2057-4347",
+    "issns": [
+      "2057-4347"
+    ],
+    "2yr_citedness": 2.6765249537892792,
+    "h_index": 41,
+    "homepage_url": "https://onlinelibrary.wiley.com/journal/20574347"
+  },
+  "Clinical implant dentistry and related research": {
+    "openalex_id": "https://openalex.org/S203969195",
+    "name": "Clinical Implant Dentistry and Related Research",
+    "issn_l": "1523-0899",
+    "issns": [
+      "1523-0899",
+      "1708-8208"
+    ],
+    "2yr_citedness": 3.6195965417867435,
+    "h_index": 123,
+    "homepage_url": "https://onlinelibrary.wiley.com/journal/17088208"
+  },
+  "Journal of orthodontics": {
+    "openalex_id": "https://openalex.org/S199732196",
+    "name": "Journal of Orthodontics",
+    "issn_l": "1465-3125",
+    "issns": [
+      "1465-3125",
+      "1465-3133"
+    ],
+    "2yr_citedness": 0.904,
+    "h_index": 70,
+    "homepage_url": "https://us.sagepub.com/en-us/nam/journal-of-orthodontics/journal203588"
+  },
+  "Minerva dental and oral science": {
+    "openalex_id": "https://openalex.org/S4210189712",
+    "name": "Minerva Dental and Oral Science",
+    "issn_l": "0026-4970",
+    "issns": [
+      "0026-4970",
+      "1827-174X",
+      "2724-6329",
+      "2724-6337"
+    ],
+    "2yr_citedness": 1.5089285714285714,
+    "h_index": 21,
+    "homepage_url": ""
+  },
+  "Molecular oral microbiology": {
+    "openalex_id": "https://openalex.org/S34700584",
+    "name": "Molecular Oral Microbiology",
+    "issn_l": "2041-1006",
+    "issns": [
+      "2041-1006",
+      "2041-1014"
+    ],
+    "2yr_citedness": 2.6574074074074074,
+    "h_index": 65,
+    "homepage_url": "https://onlinelibrary.wiley.com/journal/20411014"
+  },
+  "Oral and maxillofacial surgery clinics of North America": {
+    "openalex_id": "https://openalex.org/S133005937",
+    "name": "Oral and Maxillofacial Surgery Clinics of North America",
+    "issn_l": "1042-3699",
+    "issns": [
+      "1042-3699",
+      "1558-1365"
+    ],
+    "2yr_citedness": 1.0421052631578946,
+    "h_index": 76,
+    "homepage_url": "https://www.journals.elsevier.com/oral-and-maxillofacial-surgery-clinics-of-north-america"
   }
 }
