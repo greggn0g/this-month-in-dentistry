@@ -1039,5 +1039,115 @@
     "2yr_citedness": 1.0421052631578946,
     "h_index": 76,
     "homepage_url": "https://www.journals.elsevier.com/oral-and-maxillofacial-surgery-clinics-of-north-america"
+  },
+  "Atlas of the oral and maxillofacial surgery clinics of North America": {
+    "openalex_id": "",
+    "name": "",
+    "issn_l": "",
+    "issns": [],
+    "2yr_citedness": 0,
+    "h_index": 0
+  },
+  "Dental press journal of orthodontics": {
+    "openalex_id": "https://openalex.org/S10872509",
+    "name": "Dental Press Journal of Orthodontics",
+    "issn_l": "2176-9451",
+    "issns": [
+      "2176-9451",
+      "2177-6709"
+    ],
+    "2yr_citedness": 1.5130434782608695,
+    "h_index": 53,
+    "homepage_url": "https://www.scielo.br/j/dpjo/"
+  },
+  "European journal of orthodontics": {
+    "openalex_id": "https://openalex.org/S64889221",
+    "name": "European Journal of Orthodontics",
+    "issn_l": "0141-5387",
+    "issns": [
+      "0141-5387",
+      "1460-2210"
+    ],
+    "2yr_citedness": 3.9080459770114944,
+    "h_index": 155,
+    "homepage_url": "http://ejo.oxfordjournals.org"
+  },
+  "Journal of dental hygiene : JDH": {
+    "openalex_id": "",
+    "name": "",
+    "issn_l": "",
+    "issns": [],
+    "2yr_citedness": 0,
+    "h_index": 0
+  },
+  "The Bulletin of Tokyo Dental College": {
+    "openalex_id": "https://openalex.org/S157584073",
+    "name": "The Bulletin of Tokyo Dental College",
+    "issn_l": "0040-8891",
+    "issns": [
+      "0040-8891"
+    ],
+    "2yr_citedness": 0.5135135135135135,
+    "h_index": 34,
+    "homepage_url": ""
+  },
+  "The Journal of forensic odonto-stomatology": {
+    "openalex_id": "https://openalex.org/S2764652409",
+    "name": "The Journal of Forensic Odonto-Stomatology",
+    "issn_l": "0258-414X",
+    "issns": [
+      "0258-414X",
+      "2219-6749"
+    ],
+    "2yr_citedness": 0.021739130434782608,
+    "h_index": 3,
+    "homepage_url": "http://www.odont.uio.no/foreninger/iofos"
+  },
+  "The Journal of oral implantology": {
+    "openalex_id": "https://openalex.org/S4393916724",
+    "name": "\u0098The \u009cInternational journal of oral implantology",
+    "issn_l": "1048-1842",
+    "issns": [
+      "1048-1842"
+    ],
+    "2yr_citedness": 0,
+    "h_index": 0,
+    "homepage_url": ""
+  },
+  "The international journal of esthetic dentistry": {
+    "openalex_id": "https://openalex.org/S4210201338",
+    "name": "THE INTERNATIONAL JOURNAL OF ESTHETIC DENTISTRY",
+    "issn_l": "2198-591X",
+    "issns": [
+      "2198-591X",
+      "2447-6730"
+    ],
+    "2yr_citedness": 0,
+    "h_index": 2,
+    "homepage_url": ""
+  },
+  "The journal of adhesive dentistry": {
+    "openalex_id": "https://openalex.org/S124796293",
+    "name": "Journal of adhesive dentistry/\u0098The \u009cjournal of adhesive dentistry",
+    "issn_l": "1461-5185",
+    "issns": [
+      "1461-5185",
+      "1757-9988"
+    ],
+    "2yr_citedness": 0,
+    "h_index": 0,
+    "homepage_url": "http://www.quintpub.com/journals/jad/gp.php?journal_name=JAD&name_abbr=JAD"
+  },
+  "The journal of evidence-based dental practice": {
+    "openalex_id": "https://openalex.org/S4210177738",
+    "name": "International Journal of Evidence-Based Practice for the Dental Hygienist",
+    "issn_l": "2379-1292",
+    "issns": [
+      "2379-1292",
+      "2379-3457"
+    ],
+    "2yr_citedness": 0,
+    "h_index": 4,
+    "homepage_url": "http://www.quintpub.com/journals/journals.php3"
   }
 }
