@@ -1149,5 +1149,45 @@
     "2yr_citedness": 0,
     "h_index": 4,
     "homepage_url": "http://www.quintpub.com/journals/journals.php3"
+  },
+  "International journal of oral implantology (Berlin, Germany)": {
+    "openalex_id": "",
+    "name": "",
+    "issn_l": "",
+    "issns": [],
+    "2yr_citedness": 0,
+    "h_index": 0
+  },
+  "Journal of the Indian Society of Pedodontics and Preventive Dentistry": {
+    "openalex_id": "",
+    "name": "",
+    "issn_l": "",
+    "issns": [],
+    "2yr_citedness": 0,
+    "h_index": 0
+  },
+  "Nederlands tijdschrift voor tandheelkunde": {
+    "openalex_id": "https://openalex.org/S167952793",
+    "name": "Nederlands Tijdschrift voor Tandheelkunde",
+    "issn_l": "0028-2200",
+    "issns": [
+      "0028-2200",
+      "2214-6822"
+    ],
+    "2yr_citedness": 0.171875,
+    "h_index": 15,
+    "homepage_url": "http://www.ntvt.nl"
+  },
+  "Primary dental journal": {
+    "openalex_id": "https://openalex.org/S2764649697",
+    "name": "Primary Dental Journal",
+    "issn_l": "2050-1684",
+    "issns": [
+      "2050-1684",
+      "2050-1692"
+    ],
+    "2yr_citedness": 0.5639097744360902,
+    "h_index": 26,
+    "homepage_url": "https://us.sagepub.com/en-us/nam/primary-dental-journal/journal203671"
   }
 }
